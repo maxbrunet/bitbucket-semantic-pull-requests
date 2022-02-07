@@ -95,8 +95,7 @@ func HandlePullRequestUpdate(w http.ResponseWriter, r *http.Request) {
 	}
 
 	logReqFields := []zap.Field{
-		zap.String("owner", payload.Repository.Owner.UUID),
-		zap.String("repo_slug", payload.Repository.UUID),
+		zap.String("repository", payload.Repository.FullName),
 		zap.Int64("pull_request_id", payload.PullRequest.ID),
 		zap.String("revision", payload.PullRequest.Source.Commit.Hash),
 	}
