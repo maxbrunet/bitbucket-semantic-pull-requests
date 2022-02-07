@@ -1,0 +1,23 @@
+builds:
+  - main: ./cmd/bitbucket-semantic-pull-requests
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - windows
+      - darwin
+    goarch:
+      - '386'
+      - amd64
+      - arm
+      - arm64
+      - ppc64le
+      - s390x
+    goarm:
+      - '7'
+archives:
+  - name_template: '{{ .ProjectName }}-{{ .Os }}-{{ .Arch }}{{ if .Arm }}v{{
+      .Arm }}{{ end }}{{ if .Mips }}-{{ .Mips }}{{ end }}'
+    format: binary
+checksum:
+  name_template: '{{ .ProjectName }}-checksums.txt'

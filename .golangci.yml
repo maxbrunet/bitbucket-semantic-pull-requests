@@ -1,0 +1,37 @@
+run:
+  timeout: 2m
+linters:
+  enable-all: true
+  disable:
+    # Deprectated
+    - golint
+    - maligned
+    - scopelint
+    - interfacer
+    # Inappropriate
+    - exhaustivestruct
+    - funlen
+    - gochecknoglobals
+    - gochecknoinits
+    - lll
+    - paralleltest
+    - varnamelen
+    - wsl
+linters-settings:
+  cyclop:
+    max-complexity: 15
+  errcheck:
+    exclude-functions:
+      # Happens on exit via defer
+      - (*go.uber.org/zap.Logger).Sync
+  gofumpt:
+    extra-rules: true
+  goimports:
+    local-prefixes: github.com/maxbrunet/bitbucket-semantic-pull-requests
+issues:
+  include:
+    # Disable excluding of issues about comments from revive.
+    - EXC0012
+    - EXC0013
+    - EXC0014
+    - EXC0015

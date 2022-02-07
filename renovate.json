@@ -1,0 +1,68 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":automergeDigest",
+    ":automergeMinor",
+    ":rebaseStalePrs",
+    ":semanticCommits",
+    ":semanticCommitScope(deps)",
+    "docker:pinDigests",
+    "helpers:pinGitHubActionDigests"
+  ],
+  "assignees": ["maxbrunet"],
+  "golang": {
+    "postUpdateOptions": [
+      "gomodTidy",
+      "gomodUpdateImportPaths"
+    ]
+  },
+  "packageRules": [
+    {
+      "description": "One week stability period for Go packages",
+      "matchDatasources": ["go"],
+      "stabilityDays": 7
+    },
+    {
+      "description": "Customize golang updates commit message",
+      "matchDatasources": ["golang-version"],
+      "matchPackageNames": ["golang"],
+      "commitMessageTopic": "golang"
+    },
+    {
+      "matchDepTypes": ["require"],
+      "semanticCommitType": "build"
+    },
+    {
+      "matchPackageNames": ["golang"],
+      "matchUpdateTypes": ["patch", "minor", "major"],
+      "semanticCommitType": "build"
+    },
+    {
+      "matchPackageNames": ["gcr.io/distroless/static"],
+      "semanticCommitType": "build"
+    }
+  ],
+  "regexManagers": [
+    {
+      "description": "Update version keys in YAML files",
+      "fileMatch": ["(^|/).*.ya?ml$"],
+      "matchStrings": ["# renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>[^\\s]+?)(?: lookupName=(?<lookupName>[^\\s]+?))?(?: versioning=(?<versioning>[a-z-0-9]+?))?\\s*[\\w-_]*version: (?<currentValue>.*?)\\s"]
+    },
+    {
+      "description": "Update Golang in go.mod file",
+      "fileMatch": ["^go.mod$"],
+      "matchStrings": ["\\sgo (?<currentValue>.*?)\\s"],
+      "depNameTemplate": "golang",
+      "datasourceTemplate": "golang-version",
+      "extractVersionTemplate": "^(?<version>\\d+\\.\\d+)",
+      "versioningTemplate": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)$"
+    },
+    {
+      "description": "Update semantic-release plugins",
+      "fileMatch": ["^\\.github/workflows/build\\.yml$"],
+      "matchStrings": ["\\s{12}(?<depName>\\S+?)@(?<currentValue>.+?)\\s+"],
+      "datasourceTemplate": "npm"
+    }
+  ]
+}
