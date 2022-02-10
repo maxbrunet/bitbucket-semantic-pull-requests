@@ -141,6 +141,27 @@ func runTestCase(t *testing.T, tc *testCase) {
 	require.Equal(t, true, gock.IsDone())
 }
 
+func TestGetRoot(t *testing.T) {
+	t.Parallel()
+
+	for _, m := range []string{http.MethodGet, http.MethodHead} {
+		m := m
+		t.Run(m, func(t *testing.T) {
+			t.Parallel()
+
+			req := httptest.NewRequest(m, "/", nil)
+			rec := httptest.NewRecorder()
+
+			handler.HandlePullRequestUpdate(rec, req)
+
+			res := rec.Result()
+			defer res.Body.Close()
+
+			require.Equal(t, 200, res.StatusCode)
+		})
+	}
+}
+
 func TestVanillaConfig(t *testing.T) {
 	cases := []testCase{
 		{

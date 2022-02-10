@@ -19,7 +19,7 @@ linters:
     - wsl
 linters-settings:
   cyclop:
-    max-complexity: 15
+    max-complexity: 20
   errcheck:
     exclude-functions:
       # Happens on exit via defer
