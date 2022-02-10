@@ -58,6 +58,11 @@ func getStatusDescription(cfg *UserConfig, hasSemanticTitle, hasSemanticCommits,
 
 // HandlePullRequestUpdate handles pull-request update events.
 func HandlePullRequestUpdate(w http.ResponseWriter, r *http.Request) {
+	// Useful for simple heath check
+	if r.Method == http.MethodGet || r.Method == http.MethodHead {
+		return
+	}
+
 	spr, ok := r.Context().Value(SemanticPullRequestsKey).(*SemanticPullRequests)
 	if !ok {
 		log.Println("Error: failed to retrieve semanticPullRequests from context")
