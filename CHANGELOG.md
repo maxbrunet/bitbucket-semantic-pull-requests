@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.0.3](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.2...v1.0.3) (2022-02-11)
+
+
+### Build System
+
+* **deps:** update golang to v1.17.7 ([#8](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/8)) ([59b8369](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/59b83694dc7636542b48ce00644ebb3c67036295))
+
 ### [1.0.2](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.1...v1.0.2) (2022-02-10)
 
 
