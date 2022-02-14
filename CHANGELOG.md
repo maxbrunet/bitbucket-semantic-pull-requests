@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.0.4](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.3...v1.0.4) (2022-02-14)
+
+
+### Miscellaneous Chores
+
+* **deps:** update github/codeql-action action to v1.1.0 ([#9](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/9)) ([dc75f9b](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/dc75f9b1accbea58fca683fcb583b09b847416ea))
+
+
+### Build System
+
+* **deps:** update module go.uber.org/zap to v1.21.0 ([#5](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/5)) ([0738f6b](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/0738f6bf4b2f9b884509349cd1f774fe842e76e0))
+
 ### [1.0.3](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.2...v1.0.3) (2022-02-11)
 
 
