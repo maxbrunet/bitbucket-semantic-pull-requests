@@ -24,6 +24,11 @@ linters-settings:
     exclude-functions:
       # Happens on exit via defer
       - (*go.uber.org/zap.Logger).Sync
+  gci:
+    sections:
+      - standard
+      - default
+      - prefix(github.com/maxbrunet/bitbucket-semantic-pull-requests)
   gofumpt:
     extra-rules: true
   goimports:
