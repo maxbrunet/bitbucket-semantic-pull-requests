@@ -38,11 +38,11 @@ func getStatusDescription(cfg *UserConfig, hasSemanticTitle, hasSemanticCommits,
 	case !*cfg.Enabled:
 		return "skipped; check disabled in semantic.yml config"
 	case isSemantic && *cfg.TitleAndCommits:
-		return "ready to be merged, squashed (if PR title is used as commit message) or fast-forwarded"
+		return "ready to be merged, squashed or fast-forwarded"
 	case !isSemantic && *cfg.TitleAndCommits:
 		return "add a semantic commit AND PR title"
 	case hasSemanticTitle && !*cfg.CommitsOnly:
-		return "ready to be squashed if PR title is used as commit message"
+		return "ready to be squashed"
 	case hasSemanticCommits && !*cfg.TitleOnly:
 		return "ready to be merged or fast-forwarded"
 	case *cfg.TitleOnly:
