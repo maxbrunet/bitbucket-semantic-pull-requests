@@ -189,7 +189,7 @@ func TestVanillaConfig(t *testing.T) {
 			commits:             unsemanticCommits(),
 			config:              "",
 			expectedState:       "SUCCESSFUL",
-			expectedDescription: "ready to be squashed if PR title is used as commit message",
+			expectedDescription: "ready to be squashed",
 		},
 	}
 
@@ -232,7 +232,7 @@ func TestScopes(t *testing.T) {
 			commits:             semanticCommits(),
 			config:              "titleOnly: true\nscopes: [scope1, scope2]",
 			expectedState:       "SUCCESSFUL",
-			expectedDescription: "ready to be squashed if PR title is used as commit message",
+			expectedDescription: "ready to be squashed",
 		},
 		{
 			name:                "FailedWithSemanticCommitsAndInvalidScopes",
@@ -259,7 +259,7 @@ func TestScopes(t *testing.T) {
 			commits:             semanticCommits(),
 			config:              "titleOnly: true\nscopes: [scope1]",
 			expectedState:       "SUCCESSFUL",
-			expectedDescription: "ready to be squashed if PR title is used as commit message",
+			expectedDescription: "ready to be squashed",
 		},
 	}
 
@@ -289,7 +289,7 @@ func TestTypes(t *testing.T) {
 			commits:             semanticCommits(),
 			config:              "titleOnly: true\ntypes: [type1, type2]",
 			expectedState:       "SUCCESSFUL",
-			expectedDescription: "ready to be squashed if PR title is used as commit message",
+			expectedDescription: "ready to be squashed",
 		},
 		{
 			name:                "FailedWithSemanticCommitsAndInvalidTypes",
@@ -401,7 +401,7 @@ func TestTitleOnly(t *testing.T) {
 			commits:             unsemanticCommits(),
 			config:              "titleOnly: true",
 			expectedState:       "SUCCESSFUL",
-			expectedDescription: "ready to be squashed if PR title is used as commit message",
+			expectedDescription: "ready to be squashed",
 		},
 	}
 
@@ -449,7 +449,7 @@ func TestTitleAndCommits(t *testing.T) {
 			commits:             semanticCommits(),
 			config:              "titleAndCommits: true",
 			expectedState:       "SUCCESSFUL",
-			expectedDescription: "ready to be merged, squashed (if PR title is used as commit message) or fast-forwarded",
+			expectedDescription: "ready to be merged, squashed or fast-forwarded",
 		},
 	}
 
@@ -502,7 +502,7 @@ func TestAnyCommits(t *testing.T) {
 				},
 				{
 					configOption:        "titleAndCommits",
-					expectedDescription: "ready to be merged, squashed (if PR title is used as commit message) or fast-forwarded",
+					expectedDescription: "ready to be merged, squashed or fast-forwarded",
 				},
 			},
 			testCase: testCase{
