@@ -21,6 +21,8 @@ func init() {
 }
 
 func TestIsSemanticMessage(t *testing.T) {
+	t.Parallel()
+
 	require.Equal(t,
 		true,
 		spr.IsSemanticMessage(handler.DefaultUserConfig(), "fix: something"),
@@ -28,6 +30,8 @@ func TestIsSemanticMessage(t *testing.T) {
 }
 
 func TestIsSemanticMessageWithScope(t *testing.T) {
+	t.Parallel()
+
 	require.Equal(t,
 		true,
 		spr.IsSemanticMessage(handler.DefaultUserConfig(), "fix(subsystem): something"),
@@ -35,6 +39,8 @@ func TestIsSemanticMessageWithScope(t *testing.T) {
 }
 
 func TestIsNotSemanticMessage(t *testing.T) {
+	t.Parallel()
+
 	require.Equal(t,
 		false,
 		spr.IsSemanticMessage(handler.DefaultUserConfig(), "unsemantic commit message"),
@@ -42,6 +48,8 @@ func TestIsNotSemanticMessage(t *testing.T) {
 }
 
 func TestIsSemanticMessageWithRestrictedScopes(t *testing.T) {
+	t.Parallel()
+
 	userConfig := handler.DefaultUserConfig()
 
 	cases := []struct {
@@ -96,9 +104,11 @@ func TestIsSemanticMessageWithRestrictedScopes(t *testing.T) {
 		},
 	}
 
-	for _, tc := range cases {
-		tc := tc
+	for _, tt := range cases {
+		tc := tt
 		t.Run(tc.name, func(t *testing.T) {
+			t.Parallel()
+
 			userConfig.Scopes = &tc.scopes
 			require.Equal(t,
 				tc.expected,
@@ -109,6 +119,8 @@ func TestIsSemanticMessageWithRestrictedScopes(t *testing.T) {
 }
 
 func TestIsSemanticMessageWithAllowMergeCommits(t *testing.T) {
+	t.Parallel()
+
 	userConfig := handler.DefaultUserConfig()
 	allowMergeCommits := true
 	userConfig.AllowMergeCommits = &allowMergeCommits
@@ -127,6 +139,8 @@ func TestIsSemanticMessageWithAllowMergeCommits(t *testing.T) {
 }
 
 func TestIsSemanticMessageWithAllowRevertCommits(t *testing.T) {
+	t.Parallel()
+
 	userConfig := handler.DefaultUserConfig()
 	allowRevertCommits := true
 	userConfig.AllowRevertCommits = &allowRevertCommits
@@ -145,6 +159,8 @@ func TestIsSemanticMessageWithAllowRevertCommits(t *testing.T) {
 }
 
 func TestIsSemanticMessageWithValidTypes(t *testing.T) {
+	t.Parallel()
+
 	types := []string{
 		"feat",
 		"fix",
@@ -159,17 +175,22 @@ func TestIsSemanticMessageWithValidTypes(t *testing.T) {
 		"revert",
 	}
 
-	for _, typ := range types {
-		t.Run(typ, func(t *testing.T) {
+	for _, tt := range types {
+		tc := tt
+		t.Run(tc, func(t *testing.T) {
+			t.Parallel()
+
 			require.Equal(t,
 				true,
-				spr.IsSemanticMessage(handler.DefaultUserConfig(), typ+": something"),
+				spr.IsSemanticMessage(handler.DefaultUserConfig(), tc+": something"),
 			)
 		})
 	}
 }
 
 func TestIsNotSemanticMessageWithInvalidType(t *testing.T) {
+	t.Parallel()
+
 	require.Equal(t,
 		false,
 		spr.IsSemanticMessage(handler.DefaultUserConfig(), "alternative: something"),
@@ -177,6 +198,8 @@ func TestIsNotSemanticMessageWithInvalidType(t *testing.T) {
 }
 
 func TestIsSemanticMessageWithValidCustomTypes(t *testing.T) {
+	t.Parallel()
+
 	userConfig := handler.DefaultUserConfig()
 	customTypes := []string{
 		"alternative",
@@ -189,17 +212,22 @@ func TestIsSemanticMessageWithValidCustomTypes(t *testing.T) {
 		"improvement",
 	}
 
-	for _, typ := range types {
-		t.Run(typ, func(t *testing.T) {
+	for _, tt := range types {
+		tc := tt
+		t.Run(tc, func(t *testing.T) {
+			t.Parallel()
+
 			require.Equal(t,
 				true,
-				spr.IsSemanticMessage(userConfig, typ+": something"),
+				spr.IsSemanticMessage(userConfig, tc+": something"),
 			)
 		})
 	}
 }
 
 func TestIsSemanticMessageWithInvalidCustomTypes(t *testing.T) {
+	t.Parallel()
+
 	userConfig := handler.DefaultUserConfig()
 	customTypes := []string{
 		"alternative",
@@ -221,11 +249,124 @@ func TestIsSemanticMessageWithInvalidCustomTypes(t *testing.T) {
 		"revert",
 	}
 
-	for _, typ := range types {
-		t.Run(typ, func(t *testing.T) {
+	for _, tt := range types {
+		tc := tt
+		t.Run(tc, func(t *testing.T) {
+			t.Parallel()
+
 			require.Equal(t,
 				false,
-				spr.IsSemanticMessage(userConfig, typ+": something"),
+				spr.IsSemanticMessage(userConfig, tc+": something"),
+			)
+		})
+	}
+}
+
+func TestAreSemanticCommitsWithMalformedCommits(t *testing.T) {
+	t.Parallel()
+
+	defaultCfg := handler.DefaultUserConfig()
+
+	anyCommitCfg := handler.DefaultUserConfig()
+	anyCommit := true
+	anyCommitCfg.AnyCommit = &anyCommit
+
+	valid := []interface{}{
+		map[string]interface{}{
+			"message": "feat: potato\n",
+		},
+	}
+
+	partiallyValid := []interface{}{
+		map[string]interface{}{
+			"message": "feat: banana\n",
+		},
+		map[string]interface{}{
+			"message": "unicorn\n",
+		},
+		map[string]interface{}{
+			"message": "feat: potato\n",
+		},
+	}
+
+	malformed := []interface{}{"not a commit"}
+
+	partiallyMalformed := []interface{}{
+		map[string]interface{}{
+			"message": "feat: banana\n",
+		},
+		map[string]interface{}{
+			"unknown": "not a commit",
+		},
+		map[string]interface{}{
+			"message": "feat: potato\n",
+		},
+	}
+
+	cases := []struct {
+		name     string
+		cfg      *handler.UserConfig
+		commits  []interface{}
+		expected bool
+	}{
+		{
+			name:     "DefaultConfig/Valid",
+			cfg:      defaultCfg,
+			commits:  valid,
+			expected: true,
+		},
+		{
+			name:     "AnyCommitConfig/Valid",
+			cfg:      anyCommitCfg,
+			commits:  valid,
+			expected: true,
+		},
+		{
+			name:     "DefaultConfig/PartiallyValid",
+			cfg:      defaultCfg,
+			commits:  partiallyValid,
+			expected: false,
+		},
+		{
+			name:     "AnyCommitConfig/PartiallyValid",
+			cfg:      anyCommitCfg,
+			commits:  partiallyValid,
+			expected: true,
+		},
+		{
+			name:     "DefaultConfig/AllMalformed",
+			cfg:      defaultCfg,
+			commits:  malformed,
+			expected: false,
+		},
+		{
+			name:     "AnyCommitConfig/AllMalformed",
+			cfg:      anyCommitCfg,
+			commits:  malformed,
+			expected: false,
+		},
+		{
+			name:     "DefaultConfig/OneMalformed",
+			cfg:      defaultCfg,
+			commits:  partiallyMalformed,
+			expected: false,
+		},
+		{
+			name:     "AnyCommitConfig/OneMalformed",
+			cfg:      anyCommitCfg,
+			commits:  partiallyMalformed,
+			expected: true,
+		},
+	}
+
+	for _, tt := range cases {
+		tc := tt
+		t.Run(tc.name, func(t *testing.T) {
+			t.Parallel()
+
+			require.Equal(t,
+				tc.expected,
+				spr.AreSemanticCommits(tc.cfg, tc.commits),
 			)
 		})
 	}

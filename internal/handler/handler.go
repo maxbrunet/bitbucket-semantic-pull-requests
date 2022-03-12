@@ -133,7 +133,7 @@ func HandlePullRequestUpdate(w http.ResponseWriter, r *http.Request) {
 
 	var hasSemanticCommits bool
 	if commits != nil {
-		hasSemanticCommits = spr.areSemanticCommits(userConfig, commits, *userConfig.AnyCommit)
+		hasSemanticCommits = spr.AreSemanticCommits(userConfig, commits)
 	} else {
 		hasSemanticCommits = false
 	}
