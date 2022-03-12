@@ -262,7 +262,7 @@ func TestIsSemanticMessageWithInvalidCustomTypes(t *testing.T) {
 	}
 }
 
-func TestAreSemanticCommitsWithMalformedCommits(t *testing.T) {
+func TestAreSemanticCommits(t *testing.T) {
 	t.Parallel()
 
 	defaultCfg := handler.DefaultUserConfig()
@@ -334,25 +334,25 @@ func TestAreSemanticCommitsWithMalformedCommits(t *testing.T) {
 			expected: true,
 		},
 		{
-			name:     "DefaultConfig/AllMalformed",
+			name:     "DefaultConfig/Malformed",
 			cfg:      defaultCfg,
 			commits:  malformed,
 			expected: false,
 		},
 		{
-			name:     "AnyCommitConfig/AllMalformed",
+			name:     "AnyCommitConfig/Malformed",
 			cfg:      anyCommitCfg,
 			commits:  malformed,
 			expected: false,
 		},
 		{
-			name:     "DefaultConfig/OneMalformed",
+			name:     "DefaultConfig/PartiallyMalformed",
 			cfg:      defaultCfg,
 			commits:  partiallyMalformed,
 			expected: false,
 		},
 		{
-			name:     "AnyCommitConfig/OneMalformed",
+			name:     "AnyCommitConfig/PartiallyMalformed",
 			cfg:      anyCommitCfg,
 			commits:  partiallyMalformed,
 			expected: true,
