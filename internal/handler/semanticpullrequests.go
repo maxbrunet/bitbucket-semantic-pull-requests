@@ -98,7 +98,8 @@ func (spr *SemanticPullRequests) IsSemanticMessage(cfg *UserConfig, msg string) 
 	return isScopeValid && isTypeValid
 }
 
-func (spr *SemanticPullRequests) areSemanticCommits(cfg *UserConfig, commits []interface{}, anyCommit bool) bool {
+// AreSemanticCommits validates a given list of Bitbucket commits.
+func (spr *SemanticPullRequests) AreSemanticCommits(cfg *UserConfig, commits []interface{}) bool {
 	var c map[string]interface{}
 
 	var isSemantic, ok bool
@@ -122,14 +123,14 @@ func (spr *SemanticPullRequests) areSemanticCommits(cfg *UserConfig, commits []i
 		msg = strings.TrimSuffix(msg, "\n")
 
 		isSemantic = spr.IsSemanticMessage(cfg, msg)
-		if anyCommit && isSemantic {
+		if *cfg.AnyCommit && isSemantic {
 			return true
-		} else if !anyCommit && !isSemantic {
+		} else if !*cfg.AnyCommit && !isSemantic {
 			return false
 		}
 	}
 
-	return !anyCommit
+	return !*cfg.AnyCommit
 }
 
 func (spr *SemanticPullRequests) getCommits(owner, repoSlug, prID string) ([]interface{}, error) {
