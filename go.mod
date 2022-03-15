@@ -1,6 +1,6 @@
 module github.com/maxbrunet/bitbucket-semantic-pull-requests
 
-go 1.17
+go 1.18
 
 require (
 	github.com/go-playground/webhooks/v6 v6.0.0-rc.1
