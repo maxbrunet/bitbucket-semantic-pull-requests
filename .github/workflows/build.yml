@@ -114,7 +114,7 @@ jobs:
       - name: Build binaries
         uses: goreleaser/goreleaser-action@b953231f81b8dfd023c58e0854a721e35037f28b # tag=v2.9.1
         with:
-          # renovate: datasource=go depName=github/goreleaser/goreleaser
+          # renovate: datasource=go depName=github.com/goreleaser/goreleaser
           version: v1.4.1
           args: build --rm-dist --single-target --snapshot
 
@@ -188,7 +188,7 @@ jobs:
         if: ${{ steps.semantic-release.outputs.new_release_published == 'true' }}
         uses: goreleaser/goreleaser-action@b953231f81b8dfd023c58e0854a721e35037f28b # tag=v2.9.1
         with:
-          # renovate: datasource=go depName=github/goreleaser/goreleaser
+          # renovate: datasource=go depName=github.com/goreleaser/goreleaser
           version: v1.4.1
           args: release --rm-dist
         env:
