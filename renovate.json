@@ -11,7 +11,7 @@
     "helpers:pinGitHubActionDigests"
   ],
   "assignees": ["maxbrunet"],
-  "prCreation": "not-pending",
+  "internalChecksFilter": "strict",
   "golang": {
     "postUpdateOptions": [
       "gomodTidy",
