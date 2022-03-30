@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.0.8](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.7...v1.0.8) (2022-03-30)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/cache action to v3 ([#40](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/40)) ([31a3c45](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/31a3c45dbb1e05ec22c36ab9fef4ba88b4fed2ec))
+* **deps:** update github/codeql-action action to v1.1.5 ([#37](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/37)) ([7b98693](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/7b98693b813593da40aaf6534d208db7eddab406))
+* **renovate:** change golang datasource to docker ([#42](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/42)) ([2ce7ef4](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/2ce7ef4109346df98713ed7622f765d8e84c02da))
+* **renovate:** fix goreleaser depName ([#41](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/41)) ([8d79d1a](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/8d79d1aee4a2fd2b1361f3e59a9ea353555913a9))
+
+
+### Build System
+
+* **deps:** update module github.com/stretchr/testify to v1.7.1 ([#38](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/38)) ([91e3cba](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/91e3cba2edfa98661a83e9f464d9c180f366a1d3))
+
 ### [1.0.7](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.6...v1.0.7) (2022-03-15)
 
 
