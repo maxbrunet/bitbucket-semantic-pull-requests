@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.0.9](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.8...v1.0.9) (2022-03-31)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency github.com/goreleaser/goreleaser to v1.7.0 ([#43](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/43)) ([24103c7](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/24103c77ece23b626b5cb2153ddabe81d263b8d1))
+* **renovate:** use strict internalChecksFilter ([#44](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/44)) ([83106c5](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/83106c5325a7f9ff74fc1dc6a2ce84dc7e5156b5))
+
+
+### Build System
+
+* **deps:** update gcr.io/distroless/static digest to 2556293 ([#45](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/45)) ([77b7ccb](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/77b7ccb623eb39dc08893d7d3d1344751e37fe3e))
+
 ### [1.0.8](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.7...v1.0.8) (2022-03-30)
 
 
