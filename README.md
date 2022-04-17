@@ -12,7 +12,7 @@ behavior, see [configuration](#configuration) section below.
 Scenario | Status | Status Check Message
 -------- | ------ | -------
 PR title is semantic | 💚 | `ready to be squashed`
-any commit is semantic | 💚 | `ready to be merged or rebased`
+any commit is semantic | 💚 | `ready to be merged or fast-forwarded`
 nothing is semantic | 💛 | `add a semantic commit or PR title`
 
 Please see [zeke/semantic-pull-requests](https://github.com/zeke/semantic-pull-requests#how-it-works) for the full rational.
@@ -123,6 +123,16 @@ allowMergeCommits: true
 ```yml
 # Allow use of Revert commits (e.g. "Revert "feat: ride unicorns"")
 allowRevertCommits: true
+```
+
+## Note about conventional-changelog
+
+The [`mergePattern`](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-commits-parser#mergepattern) parser option can be used to extract the Pull Request title from Bitbucket's merge message:
+
+```yaml
+parserOpts:
+  mergePattern: '^Merged in (\S+) \(pull request #(\d+)\)$'
+  mergeCorrespondence: ['branch', 'prId']
 ```
 
 ## License
