@@ -17,8 +17,8 @@ github.com/kr/pretty v0.1.0/go.mod h1:dAy3ld7l9f0ibDNOQOHHMYYIIbhfbHSm3C4ZsoJORN
 github.com/kr/pty v1.1.1/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=
 github.com/kr/text v0.1.0 h1:45sCR5RtlFHMR4UwH9sdQ5TC8v0qDQCHnXt+kaKSTVE=
 github.com/kr/text v0.1.0/go.mod h1:4Jbv+DJW3UT/LiOwJeYQe1efqtUx/iVham/4vfdArNI=
-github.com/ktrysmt/go-bitbucket v0.9.43 h1:vsjaiqjK29npO+7/6JK7ATFs2b0OI9EVFxI5LzIvq1E=
-github.com/ktrysmt/go-bitbucket v0.9.43/go.mod h1:FWxy2UK7GlK5b0NSJGc5hPqnssVlkNnsChvyuOf/Xno=
+github.com/ktrysmt/go-bitbucket v0.9.44 h1:XEELva6HAuKXpf1fBmyvso0UNJ/s3fVeGjit/NF+e9Y=
+github.com/ktrysmt/go-bitbucket v0.9.44/go.mod h1:FWxy2UK7GlK5b0NSJGc5hPqnssVlkNnsChvyuOf/Xno=
 github.com/leodido/go-conventionalcommits v0.9.0 h1:JkwnvhWGBdQzcOsj+gWOvuF82VHOTeQfsN7plGxhmag=
 github.com/leodido/go-conventionalcommits v0.9.0/go.mod h1:1F9iXOWi2DxDtbIO4fhltd1FwUkIN9YMV0c/GHs4xoM=
 github.com/mattn/go-colorable v0.0.9/go.mod h1:9vuHe8Xs5qXnSaW/c/ABM9alt+Vo+STaOChaDxuIBZU=
