@@ -7,7 +7,10 @@ ARG TARGETVARIANT
 COPY dist /dist
 
 RUN mkdir /pick && \
-    if [ "${TARGETARCH}" == 'arm' ]; then \
+    if [ "${TARGETARCH}" == 'amd64' ]; then \
+        # https://github.com/golang/go/wiki/MinimumRequirements#amd64
+        cp "/dist/bitbucket-semantic-pull-requests_${TARGETOS}_${TARGETARCH}_${TARGETVARIANT:-v1}/bitbucket-semantic-pull-requests" /pick; \
+    elif [ "${TARGETARCH}" == 'arm' ]; then \
         cp "/dist/bitbucket-semantic-pull-requests_${TARGETOS}_${TARGETARCH}_${TARGETVARIANT##v}/bitbucket-semantic-pull-requests" /pick; \
     else \
         cp "/dist/bitbucket-semantic-pull-requests_${TARGETOS}_${TARGETARCH}/bitbucket-semantic-pull-requests" /pick; \
