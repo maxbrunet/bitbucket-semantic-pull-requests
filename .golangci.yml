@@ -4,12 +4,13 @@ linters:
   enable-all: true
   disable:
     # Deprectated
+    - exhaustivestruct
     - golint
+    - interfacer
     - maligned
     - scopelint
-    - interfacer
     # Inappropriate
-    - exhaustivestruct
+    - exhaustruct
     - funlen
     - gochecknoglobals
     - gochecknoinits
