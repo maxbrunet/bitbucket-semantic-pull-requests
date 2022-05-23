@@ -112,7 +112,7 @@ jobs:
         uses: docker/setup-buildx-action@dc7b9719a96d48369863986a06765841d7ea23f6 # tag=v2.0.0
 
       - name: Build binaries
-        uses: goreleaser/goreleaser-action@b953231f81b8dfd023c58e0854a721e35037f28b # tag=v2.9.1
+        uses: goreleaser/goreleaser-action@68acf3b1adf004ac9c2f0a4259e85c5f66e99bef # tag=v3.0.0
         with:
           # renovate: datasource=go depName=github.com/goreleaser/goreleaser
           version: v1.8.3
@@ -186,7 +186,7 @@ jobs:
       # We rebuild from the release commit, so goreleaser has the correct Git metadata from the Git tag
       - name: Build and release binaries
         if: ${{ steps.semantic-release.outputs.new_release_published == 'true' }}
-        uses: goreleaser/goreleaser-action@b953231f81b8dfd023c58e0854a721e35037f28b # tag=v2.9.1
+        uses: goreleaser/goreleaser-action@68acf3b1adf004ac9c2f0a4259e85c5f66e99bef # tag=v3.0.0
         with:
           # renovate: datasource=go depName=github.com/goreleaser/goreleaser
           version: v1.8.3
