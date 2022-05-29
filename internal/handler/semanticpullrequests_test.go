@@ -25,7 +25,7 @@ func TestIsSemanticMessage(t *testing.T) {
 
 	require.Equal(t,
 		true,
-		spr.IsSemanticMessage(handler.DefaultUserConfig(), "fix: something"),
+		spr.IsSemanticMessage(handler.NewSemanticMachine(true), handler.DefaultUserConfig(), "fix: something"),
 	)
 }
 
@@ -34,7 +34,7 @@ func TestIsSemanticMessageWithScope(t *testing.T) {
 
 	require.Equal(t,
 		true,
-		spr.IsSemanticMessage(handler.DefaultUserConfig(), "fix(subsystem): something"),
+		spr.IsSemanticMessage(handler.NewSemanticMachine(true), handler.DefaultUserConfig(), "fix(subsystem): something"),
 	)
 }
 
@@ -43,14 +43,12 @@ func TestIsNotSemanticMessage(t *testing.T) {
 
 	require.Equal(t,
 		false,
-		spr.IsSemanticMessage(handler.DefaultUserConfig(), "unsemantic commit message"),
+		spr.IsSemanticMessage(handler.NewSemanticMachine(true), handler.DefaultUserConfig(), "unsemantic commit message"),
 	)
 }
 
 func TestIsSemanticMessageWithRestrictedScopes(t *testing.T) {
 	t.Parallel()
-
-	userConfig := handler.DefaultUserConfig()
 
 	cases := []struct {
 		name     string
@@ -109,10 +107,12 @@ func TestIsSemanticMessageWithRestrictedScopes(t *testing.T) {
 		t.Run(tc.name, func(t *testing.T) {
 			t.Parallel()
 
+			userConfig := handler.DefaultUserConfig()
 			userConfig.Scopes = &tc.scopes
+
 			require.Equal(t,
 				tc.expected,
-				spr.IsSemanticMessage(userConfig, tc.message),
+				spr.IsSemanticMessage(handler.NewSemanticMachine(true), userConfig, tc.message),
 			)
 		})
 	}
@@ -121,40 +121,42 @@ func TestIsSemanticMessageWithRestrictedScopes(t *testing.T) {
 func TestIsSemanticMessageWithAllowMergeCommits(t *testing.T) {
 	t.Parallel()
 
+	machine := handler.NewSemanticMachine(true)
 	userConfig := handler.DefaultUserConfig()
 	allowMergeCommits := true
 	userConfig.AllowMergeCommits = &allowMergeCommits
 
 	require.Equal(t,
 		true,
-		spr.IsSemanticMessage(userConfig, "Merge branch 'master' into patch-1"),
+		spr.IsSemanticMessage(machine, userConfig, "Merge branch 'master' into patch-1"),
 	)
 
 	scopes := []string{"scope1"}
 	userConfig.Scopes = &scopes
 	require.Equal(t,
 		true,
-		spr.IsSemanticMessage(userConfig, "Merge refs/heads/master into angry-burritos/US-335"),
+		spr.IsSemanticMessage(machine, userConfig, "Merge refs/heads/master into angry-burritos/US-335"),
 	)
 }
 
 func TestIsSemanticMessageWithAllowRevertCommits(t *testing.T) {
 	t.Parallel()
 
+	machine := handler.NewSemanticMachine(true)
 	userConfig := handler.DefaultUserConfig()
 	allowRevertCommits := true
 	userConfig.AllowRevertCommits = &allowRevertCommits
 
 	require.Equal(t,
 		true,
-		spr.IsSemanticMessage(userConfig, "Revert \"feat: ride unicorns\"\n"),
+		spr.IsSemanticMessage(machine, userConfig, "Revert \"feat: ride unicorns\"\n"),
 	)
 
 	scopes := []string{"scope1"}
 	userConfig.Scopes = &scopes
 	require.Equal(t,
 		true,
-		spr.IsSemanticMessage(userConfig, "Revert \"feat: ride unicorns\"\n"),
+		spr.IsSemanticMessage(machine, userConfig, "Revert \"feat: ride unicorns\"\n"),
 	)
 }
 
@@ -182,7 +184,7 @@ func TestIsSemanticMessageWithValidTypes(t *testing.T) {
 
 			require.Equal(t,
 				true,
-				spr.IsSemanticMessage(handler.DefaultUserConfig(), tc+": something"),
+				spr.IsSemanticMessage(handler.NewSemanticMachine(true), handler.DefaultUserConfig(), tc+": something"),
 			)
 		})
 	}
@@ -193,7 +195,7 @@ func TestIsNotSemanticMessageWithInvalidType(t *testing.T) {
 
 	require.Equal(t,
 		false,
-		spr.IsSemanticMessage(handler.DefaultUserConfig(), "alternative: something"),
+		spr.IsSemanticMessage(handler.NewSemanticMachine(true), handler.DefaultUserConfig(), "alternative: something"),
 	)
 }
 
@@ -219,7 +221,7 @@ func TestIsSemanticMessageWithValidCustomTypes(t *testing.T) {
 
 			require.Equal(t,
 				true,
-				spr.IsSemanticMessage(userConfig, tc+": something"),
+				spr.IsSemanticMessage(handler.NewSemanticMachine(false), userConfig, tc+": something"),
 			)
 		})
 	}
@@ -256,7 +258,7 @@ func TestIsSemanticMessageWithInvalidCustomTypes(t *testing.T) {
 
 			require.Equal(t,
 				false,
-				spr.IsSemanticMessage(userConfig, tc+": something"),
+				spr.IsSemanticMessage(handler.NewSemanticMachine(true), userConfig, tc+": something"),
 			)
 		})
 	}
@@ -366,7 +368,7 @@ func TestAreSemanticCommits(t *testing.T) {
 
 			require.Equal(t,
 				tc.expected,
-				spr.AreSemanticCommits(tc.cfg, tc.commits),
+				spr.AreSemanticCommits(handler.NewSemanticMachine(true), tc.cfg, tc.commits),
 			)
 		})
 	}
