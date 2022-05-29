@@ -117,7 +117,9 @@ func HandlePullRequestUpdate(w http.ResponseWriter, r *http.Request) {
 		)
 	}
 
-	hasSemanticTitle := spr.IsSemanticMessage(userConfig, payload.PullRequest.Title)
+	machine := NewSemanticMachine(userConfig.Types == nil)
+
+	hasSemanticTitle := spr.IsSemanticMessage(machine, userConfig, payload.PullRequest.Title)
 
 	commits, err := spr.getCommits(
 		payload.Repository.Owner.UUID,
@@ -133,7 +135,7 @@ func HandlePullRequestUpdate(w http.ResponseWriter, r *http.Request) {
 
 	var hasSemanticCommits bool
 	if commits != nil {
-		hasSemanticCommits = spr.AreSemanticCommits(userConfig, commits)
+		hasSemanticCommits = spr.AreSemanticCommits(machine, userConfig, commits)
 	} else {
 		hasSemanticCommits = false
 	}

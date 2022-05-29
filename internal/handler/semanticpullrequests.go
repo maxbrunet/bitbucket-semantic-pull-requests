@@ -14,11 +14,9 @@ import (
 
 // SemanticPullRequests validates Bitbucket pull-requests.
 type SemanticPullRequests struct {
-	Client       *bitbucket.Client
-	Conventional conventionalcommits.Machine
-	FreeForm     conventionalcommits.Machine
-	Hook         *webhook.Webhook
-	Logger       *zap.Logger
+	Client *bitbucket.Client
+	Hook   *webhook.Webhook
+	Logger *zap.Logger
 }
 
 var errParsingCommits = errors.New("error parsing commits")
@@ -27,30 +25,33 @@ var errParsingCommits = errors.New("error parsing commits")
 func NewSemanticPullRequests(username, password string, logger *zap.Logger) (*SemanticPullRequests, error) {
 	client := bitbucket.NewBasicAuth(username, password)
 
-	conventional := parser.NewMachine(
-		conventionalcommits.WithTypes(conventionalcommits.TypesConventional),
-	)
-
-	freeForm := parser.NewMachine(
-		conventionalcommits.WithTypes(conventionalcommits.TypesFreeForm),
-	)
-
 	hook, err := webhook.New()
 	if err != nil {
 		return nil, fmt.Errorf("failed to initialize webhook: %w", err)
 	}
 
 	return &SemanticPullRequests{
-		Client:       client,
-		Conventional: conventional,
-		FreeForm:     freeForm,
-		Hook:         hook,
-		Logger:       logger,
+		Client: client,
+		Hook:   hook,
+		Logger: logger,
 	}, nil
 }
 
+// NewSemanticMachine instantiates and returns a new conventionalcommits parser machine.
+func NewSemanticMachine(conventionalTypes bool) conventionalcommits.Machine {
+	if conventionalTypes {
+		return parser.NewMachine(
+			conventionalcommits.WithTypes(conventionalcommits.TypesConventional),
+		)
+	}
+
+	return parser.NewMachine(
+		conventionalcommits.WithTypes(conventionalcommits.TypesFreeForm),
+	)
+}
+
 // IsSemanticMessage validates the semantic of a given message.
-func (spr *SemanticPullRequests) IsSemanticMessage(cfg *UserConfig, msg string) bool {
+func (spr *SemanticPullRequests) IsSemanticMessage(machine conventionalcommits.Machine, cfg *UserConfig, msg string) bool {
 	if *cfg.AllowMergeCommits && strings.HasPrefix(msg, "Merge") {
 		return true
 	}
@@ -59,14 +60,7 @@ func (spr *SemanticPullRequests) IsSemanticMessage(cfg *UserConfig, msg string) 
 		return true
 	}
 
-	var ccMsg conventionalcommits.Message
-	var err error
-	if cfg.Types == nil {
-		ccMsg, err = spr.Conventional.Parse([]byte(msg))
-	} else {
-		ccMsg, err = spr.FreeForm.Parse([]byte(msg))
-	}
-
+	ccMsg, err := machine.Parse([]byte(msg))
 	if err != nil {
 		spr.Logger.Debug(
 			"failed to parse message",
@@ -99,7 +93,7 @@ func (spr *SemanticPullRequests) IsSemanticMessage(cfg *UserConfig, msg string) 
 }
 
 // AreSemanticCommits validates a given list of Bitbucket commits.
-func (spr *SemanticPullRequests) AreSemanticCommits(cfg *UserConfig, commits []interface{}) bool {
+func (spr *SemanticPullRequests) AreSemanticCommits(machine conventionalcommits.Machine, cfg *UserConfig, commits []interface{}) bool {
 	var c map[string]interface{}
 
 	var isSemantic, ok bool
@@ -122,7 +116,7 @@ func (spr *SemanticPullRequests) AreSemanticCommits(cfg *UserConfig, commits []i
 		// so it is definitely not coming from the user
 		msg = strings.TrimSuffix(msg, "\n")
 
-		isSemantic = spr.IsSemanticMessage(cfg, msg)
+		isSemantic = spr.IsSemanticMessage(machine, cfg, msg)
 		if *cfg.AnyCommit && isSemantic {
 			return true
 		} else if !*cfg.AnyCommit && !isSemantic {

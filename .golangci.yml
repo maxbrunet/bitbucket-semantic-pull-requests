@@ -34,6 +34,13 @@ linters-settings:
     extra-rules: true
   goimports:
     local-prefixes: github.com/maxbrunet/bitbucket-semantic-pull-requests
+  ireturn:
+    allow:
+      - anon
+      - error
+      - empty
+      - stdlib
+      - github\.com\/leodido\/go-conventionalcommits
 issues:
   include:
     # Disable excluding of issues about comments from revive.
