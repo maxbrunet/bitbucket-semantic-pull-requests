@@ -38,20 +38,24 @@ func NewSemanticPullRequests(username, password string, logger *zap.Logger) (*Se
 }
 
 // NewSemanticMachine instantiates and returns a new conventionalcommits parser machine.
-func NewSemanticMachine(conventionalTypes bool) conventionalcommits.Machine {
+func NewSemanticMachine(conventionalTypes bool) *conventionalcommits.Machine {
+	var machine conventionalcommits.Machine
+
 	if conventionalTypes {
-		return parser.NewMachine(
+		machine = parser.NewMachine(
 			conventionalcommits.WithTypes(conventionalcommits.TypesConventional),
+		)
+	} else {
+		machine = parser.NewMachine(
+			conventionalcommits.WithTypes(conventionalcommits.TypesFreeForm),
 		)
 	}
 
-	return parser.NewMachine(
-		conventionalcommits.WithTypes(conventionalcommits.TypesFreeForm),
-	)
+	return &machine
 }
 
 // IsSemanticMessage validates the semantic of a given message.
-func (spr *SemanticPullRequests) IsSemanticMessage(machine conventionalcommits.Machine, cfg *UserConfig, msg string) bool {
+func (spr *SemanticPullRequests) IsSemanticMessage(machine *conventionalcommits.Machine, cfg *UserConfig, msg string) bool {
 	if *cfg.AllowMergeCommits && strings.HasPrefix(msg, "Merge") {
 		return true
 	}
@@ -60,7 +64,7 @@ func (spr *SemanticPullRequests) IsSemanticMessage(machine conventionalcommits.M
 		return true
 	}
 
-	ccMsg, err := machine.Parse([]byte(msg))
+	ccMsg, err := (*machine).Parse([]byte(msg))
 	if err != nil {
 		spr.Logger.Debug(
 			"failed to parse message",
@@ -93,7 +97,7 @@ func (spr *SemanticPullRequests) IsSemanticMessage(machine conventionalcommits.M
 }
 
 // AreSemanticCommits validates a given list of Bitbucket commits.
-func (spr *SemanticPullRequests) AreSemanticCommits(machine conventionalcommits.Machine, cfg *UserConfig, commits []interface{}) bool {
+func (spr *SemanticPullRequests) AreSemanticCommits(machine *conventionalcommits.Machine, cfg *UserConfig, commits []interface{}) bool {
 	var c map[string]interface{}
 
 	var isSemantic, ok bool
