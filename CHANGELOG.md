@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.0.19](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.18...v1.0.19) (2022-05-30)
+
+
+### Bug Fixes
+
+* pass conventionalcommits.Machine by reference ([#83](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/83)) ([7c8a8dd](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/7c8a8ddb9b8c3bfab30c66f19c840aab92ec147a))
+
 ### [1.0.18](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.17...v1.0.18) (2022-05-29)
 
 
