@@ -7,7 +7,7 @@ require (
 	github.com/ktrysmt/go-bitbucket v0.9.46
 	github.com/leodido/go-conventionalcommits v0.9.0
 	github.com/spf13/pflag v1.0.5
-	github.com/stretchr/testify v1.7.1
+	github.com/stretchr/testify v1.7.2
 	go.uber.org/zap v1.21.0
 	gopkg.in/h2non/gock.v1 v1.1.2
 	gopkg.in/yaml.v2 v2.4.0
@@ -26,5 +26,5 @@ require (
 	golang.org/x/oauth2 v0.0.0-20180227000427-d7d64896b5ff // indirect
 	golang.org/x/sys v0.0.0-20210510120138-977fb7262007 // indirect
 	google.golang.org/appengine v1.0.0 // indirect
-	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
