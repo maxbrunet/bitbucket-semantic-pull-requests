@@ -11,14 +11,14 @@ github.com/golang/protobuf v1.0.0/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5y
 github.com/h2non/parth v0.0.0-20190131123155-b4df798d6542 h1:2VTzZjLZBgl62/EtslCrtky5vbi9dd7HrQPQIx6wqiw=
 github.com/h2non/parth v0.0.0-20190131123155-b4df798d6542/go.mod h1:Ow0tF8D4Kplbc8s8sSb3V2oUCygFHVp8gC3Dn6U4MNI=
 github.com/k0kubun/colorstring v0.0.0-20150214042306-9440f1994b88/go.mod h1:3w7q1U84EfirKl04SVQ/s7nPm1ZPhiXd34z40TNz36k=
-github.com/k0kubun/pp v2.3.0+incompatible/go.mod h1:GWse8YhT0p8pT4ir3ZgBbfZild3tgzSScAn6HmfYukg=
+github.com/k0kubun/pp v3.0.1+incompatible/go.mod h1:GWse8YhT0p8pT4ir3ZgBbfZild3tgzSScAn6HmfYukg=
 github.com/kr/pretty v0.1.0 h1:L/CwN0zerZDmRFUapSPitk6f+Q3+0za1rQkzVuMiMFI=
 github.com/kr/pretty v0.1.0/go.mod h1:dAy3ld7l9f0ibDNOQOHHMYYIIbhfbHSm3C4ZsoJORNo=
 github.com/kr/pty v1.1.1/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=
 github.com/kr/text v0.1.0 h1:45sCR5RtlFHMR4UwH9sdQ5TC8v0qDQCHnXt+kaKSTVE=
 github.com/kr/text v0.1.0/go.mod h1:4Jbv+DJW3UT/LiOwJeYQe1efqtUx/iVham/4vfdArNI=
-github.com/ktrysmt/go-bitbucket v0.9.46 h1:zdqTUccenJr7NVktiOn9M49F6vtVUgBsYW0HnPZLByM=
-github.com/ktrysmt/go-bitbucket v0.9.46/go.mod h1:FWxy2UK7GlK5b0NSJGc5hPqnssVlkNnsChvyuOf/Xno=
+github.com/ktrysmt/go-bitbucket v0.9.47 h1:7sxgE3PUMfwIFDxDC080UV7buhmLllBemvRhlo0laoA=
+github.com/ktrysmt/go-bitbucket v0.9.47/go.mod h1:dPZimcoMYCZmL8eaCu5rda+QbH3ou7d6OCyehCmPpyM=
 github.com/leodido/go-conventionalcommits v0.9.0 h1:JkwnvhWGBdQzcOsj+gWOvuF82VHOTeQfsN7plGxhmag=
 github.com/leodido/go-conventionalcommits v0.9.0/go.mod h1:1F9iXOWi2DxDtbIO4fhltd1FwUkIN9YMV0c/GHs4xoM=
 github.com/mattn/go-colorable v0.0.9/go.mod h1:9vuHe8Xs5qXnSaW/c/ABM9alt+Vo+STaOChaDxuIBZU=
