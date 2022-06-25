@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/go-playground/webhooks/v6 v6.0.1
-	github.com/ktrysmt/go-bitbucket v0.9.47
+	github.com/ktrysmt/go-bitbucket v0.9.48
 	github.com/leodido/go-conventionalcommits v0.9.0
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.7.2
