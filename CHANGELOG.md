@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.27](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.26...v1.0.27) (2022-06-28)
+
+
+### Build System
+
+* **deps:** update module github.com/stretchr/testify to v1.7.4 ([#101](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/101)) ([4f40a06](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/4f40a0656314e5865fd21a481c65d01e1e882b16))
+
 ## [1.0.26](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.25...v1.0.26) (2022-06-27)
 
 
