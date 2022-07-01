@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.28](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.27...v1.0.28) (2022-07-01)
+
+
+### Miscellaneous Chores
+
+* **deps:** update github/codeql-action action to v2.1.15 ([#102](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/102)) ([d28afc7](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/d28afc7aa1c226413707789694d3c86564069f6b))
+
+
+### Build System
+
+* **deps:** update module github.com/stretchr/testify to v1.7.5 ([#103](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/103)) ([1f173db](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/1f173dbd35354b9d33e7b4255aff1414def04b5d))
+
 ## [1.0.27](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.26...v1.0.27) (2022-06-28)
 
 
