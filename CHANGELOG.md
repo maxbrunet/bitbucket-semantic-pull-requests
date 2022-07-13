@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.31](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.30...v1.0.31) (2022-07-13)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/setup-go action to v3.2.1 ([#107](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/107)) ([78844ee](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/78844eed6e3c47ee78608cbb0135d956c8bedb96))
+* **deps:** update dependency github.com/goreleaser/goreleaser to v1.10.0 ([#106](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/106)) ([dee9527](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/dee952796a348918f5df9dc026b94cfcd42cd138))
+* **deps:** update dependency github.com/goreleaser/goreleaser to v1.10.1 ([#108](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/108)) ([d119b5d](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/d119b5d32dc930478666f9a8d534a2e63c9e44d0))
+
+
+### Build System
+
+* **deps:** update golang to v1.18.4 ([#109](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/109)) ([1a1b9f8](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/1a1b9f8e3684da16cb1f11b198acac553e719e48))
+
 ## [1.0.30](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.29...v1.0.30) (2022-07-10)
 
 
