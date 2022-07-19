@@ -119,7 +119,7 @@ jobs:
           args: build --rm-dist --single-target --snapshot
 
       - name: Build container images
-        uses: docker/build-push-action@e551b19e49efd4e98792db7592c17c09b89db8d8 # tag=v3.0.0
+        uses: docker/build-push-action@1cb9d22b932e4832bb29793b7777ec860fc1cde0 # tag=v3.1.0
         with:
           # Use Path context, so dist directory is available
           context: .
@@ -196,7 +196,7 @@ jobs:
 
       - name: Build and push container images
         if: ${{ steps.semantic-release.outputs.new_release_published == 'true' }}
-        uses: docker/build-push-action@e551b19e49efd4e98792db7592c17c09b89db8d8 # tag=v3.0.0
+        uses: docker/build-push-action@1cb9d22b932e4832bb29793b7777ec860fc1cde0 # tag=v3.1.0
         with:
           # Use Path context, so dist directory is available
           context: .
