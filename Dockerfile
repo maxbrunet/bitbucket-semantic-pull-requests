@@ -1,4 +1,4 @@
-FROM --platform="${BUILDPLATFORM}" docker.io/library/busybox:1.35.0@sha256:a3170d3672568b2c6626710db3573f3d92ee31eed933c24f3d7ea978178e21b8 AS picker
+FROM --platform="${BUILDPLATFORM}" docker.io/library/busybox:1.35.0@sha256:34aa982274acc5cbf296f4a75550702bd886a59685ed7629827a1881193e3d93 AS picker
 
 ARG TARGETOS
 ARG TARGETARCH
