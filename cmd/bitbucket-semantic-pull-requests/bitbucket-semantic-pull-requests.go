@@ -7,6 +7,7 @@ import (
 	"net"
 	"net/http"
 	"os"
+	"time"
 
 	flag "github.com/spf13/pflag"
 	"go.uber.org/zap"
@@ -66,6 +67,7 @@ func main() {
 		logger.Error("failed to initialize semantic-pull-requests", zap.Error(err))
 	}
 
+	// nolint:gomnd
 	server := &http.Server{
 		Addr:     *listenAddr,
 		Handler:  mux,
@@ -77,6 +79,7 @@ func main() {
 				spr,
 			)
 		},
+		ReadHeaderTimeout: 5 * time.Second,
 	}
 
 	if err := server.ListenAndServe(); err != nil {
