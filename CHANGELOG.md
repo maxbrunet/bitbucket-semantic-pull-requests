@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.33](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.32...v1.0.33) (2022-08-01)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency github.com/golangci/golangci-lint to v1.47.2 ([#117](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/117)) ([be07b8f](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/be07b8f3e603cb9027428c927e28324507fcc219))
+* **deps:** update docker.io/library/busybox digest to 09439c0 ([#123](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/123)) ([f62585f](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/f62585fade527adb4caffb30798ea112d00c1be5))
+
+
+### Build System
+
+* **deps:** update golang to v1.18.5 ([#124](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/124)) ([7b4f53b](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/7b4f53bcf52863cf152c913d3812f3b6d12cc0f8))
+
 ## [1.0.32](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.31...v1.0.32) (2022-07-31)
 
 
