@@ -52,11 +52,11 @@
       "matchStrings": ["# renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>[^\\s]+?)(?: packageName=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[a-z-0-9]+?))?\\s*[\\w-_]*version: (?<currentValue>.*?)\\s"]
     },
     {
-      "description": "Update Golang in go.mod file",
-      "fileMatch": ["^go.mod$"],
-      "matchStrings": ["\\sgo (?<currentValue>.*?)\\s"],
+      "description": "Update Golang in .go-version file",
+      "fileMatch": ["(^|/)\\.go-version$"],
+      "matchStrings": ["^\\s*(?<currentValue>.+?)\\s*$"],
       "depNameTemplate": "golang",
-      "datasourceTemplate": "docker"
+      "datasourceTemplate": "golang-version"
     },
     {
       "description": "Update semantic-release plugins",
