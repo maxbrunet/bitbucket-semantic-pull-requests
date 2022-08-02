@@ -27,8 +27,8 @@
     },
     {
       "description": "Customize golang updates commit message",
-      "matchDatasources": ["docker"],
-      "matchPackageNames": ["golang"],
+      "matchDatasources": ["golang-version"],
+      "matchPackageNames": ["go"],
       "commitMessageTopic": "golang"
     },
     {
@@ -55,7 +55,7 @@
       "description": "Update Golang in .go-version file",
       "fileMatch": ["(^|/)\\.go-version$"],
       "matchStrings": ["^\\s*(?<currentValue>.+?)\\s*$"],
-      "depNameTemplate": "golang",
+      "depNameTemplate": "go",
       "datasourceTemplate": "golang-version"
     },
     {
