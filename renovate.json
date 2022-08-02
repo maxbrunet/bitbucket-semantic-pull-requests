@@ -29,14 +29,14 @@
       "description": "Customize golang updates commit message",
       "matchDatasources": ["golang-version"],
       "matchPackageNames": ["go"],
-      "commitMessageTopic": "golang"
+      "commitMessageTopic": "Go"
     },
     {
       "matchDepTypes": ["require"],
       "semanticCommitType": "build"
     },
     {
-      "matchPackageNames": ["golang"],
+      "matchPackageNames": ["go"],
       "matchUpdateTypes": ["patch", "minor", "major"],
       "semanticCommitType": "build"
     },
