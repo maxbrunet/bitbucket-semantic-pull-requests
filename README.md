@@ -1,5 +1,9 @@
 # Bitbucket Semantic Pull Requests
 
+[![release](https://img.shields.io/github/v/release/maxbrunet/bitbucket-semantic-pull-requests?sort=semver)](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/releases)
+[![build](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/actions/workflows/build.yml/badge.svg)](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/actions/workflows/build.yml)
+[![go report](https://goreportcard.com/badge/github.com/maxbrunet/bitbucket-semantic-pull-requests)](https://goreportcard.com/report/github.com/maxbrunet/bitbucket-semantic-pull-requests)
+
 Bitbucket Cloud status check that ensures your pull requests follow the [Conventional Commits spec](https://conventionalcommits.org/).
 
 Heavily inspired by [zeke/semantic-pull-requests](https://github.com/zeke/semantic-pull-requests), if not a rewrite in Go for Bitbucket Cloud.
