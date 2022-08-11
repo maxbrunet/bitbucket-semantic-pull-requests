@@ -67,7 +67,7 @@ func main() {
 		logger.Error("failed to initialize semantic-pull-requests", zap.Error(err))
 	}
 
-	// nolint:gomnd
+	//nolint:gomnd
 	server := &http.Server{
 		Addr:     *listenAddr,
 		Handler:  mux,
