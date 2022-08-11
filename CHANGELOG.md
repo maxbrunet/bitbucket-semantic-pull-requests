@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.34](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.33...v1.0.34) (2022-08-11)
+
+
+### Documentation
+
+* **readme:** add badges ([#129](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/129)) ([98bcf35](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/98bcf358ff8a5f7480b2407d116b3397143842bc))
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/cache action to v3.0.6 ([#131](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/131)) ([0451136](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/0451136f92cf33f9c756758f5d08d508c57cb6ea))
+* **deps:** update actions/cache action to v3.0.7 ([#135](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/135)) ([7770e04](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/7770e047efc2bc0d5f86ab379b1785cc6b09ae47))
+* **deps:** update cycjimmy/semantic-release-action action to v3.1.0 ([#130](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/130)) ([c7f07d2](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/c7f07d2641ca63685b79f2226b78c7cec8021c4f))
+* **deps:** update dependency github.com/golangci/golangci-lint to v1.47.3 ([#133](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/133)) ([6b35f49](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/6b35f4935d3aeec38dee004bbcc2fa2a864a05de))
+* **deps:** update dependency github.com/golangci/golangci-lint to v1.48.0 ([#134](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/134)) ([e8b3762](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/e8b3762eccaba3796554f807c7b6c7d6e58338d7))
+* **deps:** update dependency github.com/goreleaser/goreleaser to v1.10.3 ([#127](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/127)) ([bdbda24](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/bdbda24a13338c573382c6db7bf4bac839e3b401))
+* **deps:** update docker/build-push-action action to v3.1.1 ([#132](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/132)) ([690f95c](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/690f95c417eb6152163d3660d47c6241e2568d69))
+* **deps:** update github/codeql-action action to v2.1.18 ([#128](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/128)) ([db3c16b](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/db3c16b5aaf9f95c71df1ba3f4b066ad781941ba))
+* fix "directive `// nolint:gomnd` should be written without leading space as `//nolint:gomnd`" ([#136](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/136)) ([fc78281](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/fc782813a1deb66b5aa9ff24561983ed1bf75a03))
+* **renovate:** fix Go version updates ([1ffce7a](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/1ffce7ae78bdeff53349e6c78499650b132d1b88))
+* **renovate:** fix Go version updates (part 2) ([42f298f](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/42f298f9b05d6644677e97d75d22c6131d841543))
+* **renovate:** use golang-version datasource ([7f44ccc](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/7f44ccc9d012cb5402752fe41abd4c01fd61d048))
+
+
+### Build System
+
+* **deps:** update go to v1.19.0 ([#125](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/125)) ([bebeb7c](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/bebeb7cbc90b5b79b9514ecfbc9ccbf36574f2b0))
+
 ## [1.0.33](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.32...v1.0.33) (2022-08-01)
 
 
