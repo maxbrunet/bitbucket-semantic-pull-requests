@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.35](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.34...v1.0.35) (2022-08-15)
+
+
+### Build System
+
+* **deps:** update module go.uber.org/zap to v1.22.0 ([#137](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/137)) ([5ae434f](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/5ae434f59580c199673434abcc544d4d7cbe4470))
+
 ## [1.0.34](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.33...v1.0.34) (2022-08-11)
 
 
