@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.38](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.37...v1.0.38) (2022-08-31)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/cache action to v3.0.8 ([#141](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/141)) ([68114ad](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/68114ad6c386188e795c7673c2b2427af1b71655))
+* **deps:** update actions/setup-go action to v3.3.0 ([#145](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/145)) ([dc2b14a](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/dc2b14adad9291856c15ae86d5773c7ca5fb1d85))
+* **deps:** update cycjimmy/semantic-release-action action to v3.1.1 ([#147](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/147)) ([d822d76](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/d822d76c5056a19aacb96ee8078d98fd10a69551))
+* **deps:** update dependency semantic-release to v19.0.4 ([#143](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/143)) ([d03062d](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/d03062d97c2ad4a21ca8ed6df3b81ffb424a09e0))
+* **deps:** update dependency semantic-release to v19.0.5 ([#144](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/144)) ([ceda68b](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/ceda68b1912ba5e4dea93d3c89ab56614e28c659))
+* **deps:** update github/codeql-action action to v2.1.21 ([#142](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/142)) ([694067a](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/694067addc9a2329055dd96bf8c76fb6b2695347))
+* **deps:** update goreleaser/goreleaser-action action to v3.1.0 ([#146](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/146)) ([d1eae01](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/d1eae01fc100fe36dd92564701339dfb00f40db4))
+
+
+### Build System
+
+* **deps:** update module go.uber.org/zap to v1.23.0 ([#149](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/149)) ([81a485d](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/81a485df5d25c59ff505251a93da24b43bf8fe67))
+
 ## [1.0.37](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.36...v1.0.37) (2022-08-21)
 
 
