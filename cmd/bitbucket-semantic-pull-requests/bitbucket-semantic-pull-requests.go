@@ -1,3 +1,4 @@
+// Package bitbucket-semantic-pull-requests is the entrypoint of the webhook server
 package main
 
 import (

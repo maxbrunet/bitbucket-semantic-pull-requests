@@ -4,11 +4,16 @@ linters:
   enable-all: true
   disable:
     # Deprectated
+    - deadcode
     - exhaustivestruct
     - golint
+    - ifshort
     - interfacer
     - maligned
+    - nosnakecase
     - scopelint
+    - structcheck
+    - varcheck
     # Inappropriate
     - exhaustruct
     - funlen
