@@ -1,3 +1,4 @@
+// Package handler provides the internal functionalities of the semantic-pull-requests webhook
 package handler
 
 import (
