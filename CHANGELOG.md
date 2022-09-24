@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.43](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.42...v1.0.43) (2022-09-24)
+
+
+### Build System
+
+* **deps:** update module github.com/leodido/go-conventionalcommits to v0.10.0 ([#169](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/169)) ([fc10ccd](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/fc10ccdfc502b90fca5a2715336401c07f579e55))
+
 ## [1.0.42](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.41...v1.0.42) (2022-09-23)
 
 
