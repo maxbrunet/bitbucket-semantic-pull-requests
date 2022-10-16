@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.49](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.48...v1.0.49) (2022-10-16)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/cache action to v3.0.11 ([#187](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/187)) ([764ae5c](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/764ae5c0664881e6e687c78f53e6ec5032e8f200))
+* **deps:** update dependency github.com/golangci/golangci-lint to v1.50.0 ([#183](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/183)) ([6fc16a7](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/6fc16a7ab434d10b690aad402b01ea81ec416b5f))
+* **deps:** update dependency github.com/goreleaser/goreleaser to v1.11.5 ([#182](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/182)) ([6cc15bc](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/6cc15bc14c88571f663195d147cfb5658ca663da))
+* **deps:** update docker/build-push-action action to v3.2.0 ([#184](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/184)) ([b0be834](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/b0be8347e9094a5a1a891cbd4b8adec8feb3db98))
+* **deps:** update docker/login-action action to v2.1.0 ([#185](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/185)) ([b46992a](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/b46992a4482f3ee233519f468fc34bd1d67b426a))
+* **deps:** update docker/setup-buildx-action action to v2.1.0 ([#186](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/186)) ([d5a349b](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/d5a349b4601e0a259454991f003bbc99fa8ed9fe))
+* **deps:** update github/codeql-action action to v2.1.27 ([#181](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/181)) ([1e54764](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/1e54764debff2cacb1317d0a1107f8c5f0ee30b4))
+
+
+### Build System
+
+* **deps:** update gcr.io/distroless/static:nonroot docker digest to d8afc7d ([#188](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/188)) ([d3e9821](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/d3e9821991e6db24f6f443087a6e619e1790fd2b))
+
 ## [1.0.48](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.47...v1.0.48) (2022-10-04)
 
 
