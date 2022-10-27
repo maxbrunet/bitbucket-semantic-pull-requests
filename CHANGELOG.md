@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.50](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.49...v1.0.50) (2022-10-27)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/setup-go action to v3.3.1 ([#192](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/192)) ([1b5861f](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/1b5861f3e58c38c2f0a9fd1fe048f24f81136257))
+* **deps:** update cycjimmy/semantic-release-action action to v3.1.2 ([#194](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/194)) ([cded54b](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/cded54b504dacb6ebbcbb16e075414f19942dbfe))
+* **deps:** update dependency github.com/goreleaser/goreleaser to v1.12.1 ([#196](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/196)) ([05906cc](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/05906cc85ac45fdd2e81f2969abeea181d807c6b))
+* **deps:** update dependency github.com/goreleaser/goreleaser to v1.12.2 ([#202](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/202)) ([f50f7bc](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/f50f7bc2ddad8f4ec8c71c22d97f610024bac390))
+* **deps:** update docker.io/library/busybox:1.35.0 docker digest to 75e8d0f ([#197](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/197)) ([b3f584e](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/b3f584e7a9fe44514206de0e9985ad32284fedae))
+* **deps:** update docker.io/library/busybox:1.35.0 docker digest to c17ff78 ([#198](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/198)) ([7138a0b](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/7138a0bc953d4d5cc3f9b216e480226a3a3e20c2))
+* **deps:** update docker.io/library/busybox:1.35.0 docker digest to c257866 ([#201](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/201)) ([9cfc509](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/9cfc50971d7629d4c004893945e4054b4e4fda6f))
+* **deps:** update docker.io/library/busybox:1.35.0 docker digest to e732c95 ([#203](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/203)) ([beb5bc0](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/beb5bc0f8983d69b0c878d35b94dcb1a8bbcfcd8))
+* **deps:** update docker.io/library/busybox:1.35.0 docker digest to eb7121d ([#199](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/199)) ([5fb8053](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/5fb80532c7ec4cf38533fceb11b596338e0f3219))
+* **deps:** update docker/setup-buildx-action action to v2.2.0 ([#189](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/189)) ([1f4ce41](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/1f4ce41f2477821a3f112750490b7cfc5647e79e))
+* **deps:** update docker/setup-buildx-action action to v2.2.1 ([#191](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/191)) ([e952d42](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/e952d42667a3c0aedc18317e42fb4a5df36d8914))
+* **deps:** update github/codeql-action action to v2.1.28 ([#193](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/193)) ([f29528f](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/f29528f908378f58bd8d9fc74d79ce68f470ed6a))
+* **deps:** update github/codeql-action action to v2.1.29 ([#200](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/200)) ([52e16ef](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/52e16ef5f721a3e51519a06220ea3134dc74426b))
+* **deps:** update golangci/golangci-lint-action action to v3.3.0 ([#195](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/195)) ([8bd44f6](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/8bd44f676215e3b61b64032917750f8bbd070dbe))
+* **deps:** update goreleaser/goreleaser-action action to v3.2.0 ([#190](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/190)) ([893ffb8](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/893ffb8a682898fe500522ef13cae08d25c22684))
+
+
+### Build System
+
+* **deps:** update module github.com/stretchr/testify to v1.8.1 ([#204](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/204)) ([8a15605](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/8a1560595a780a993c22126554c9d669a0e00222))
+
 ## [1.0.49](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.48...v1.0.49) (2022-10-16)
 
 
