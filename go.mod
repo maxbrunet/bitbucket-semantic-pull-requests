@@ -7,7 +7,7 @@ require (
 	github.com/ktrysmt/go-bitbucket v0.9.54
 	github.com/leodido/go-conventionalcommits v0.10.0
 	github.com/spf13/pflag v1.0.5
-	github.com/stretchr/testify v1.8.0
+	github.com/stretchr/testify v1.8.1
 	go.uber.org/zap v1.23.0
 	gopkg.in/h2non/gock.v1 v1.1.2
 	gopkg.in/yaml.v2 v2.4.0
