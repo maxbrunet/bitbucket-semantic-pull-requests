@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.52](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.51...v1.0.52) (2022-11-02)
+
+
+### Miscellaneous Chores
+
+* **deps:** update github/codeql-action action to v2.1.30 ([#208](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/208)) ([b7751e4](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/b7751e4b8cfc38353bb7adae3a4b20c80e52e87b))
+
+
+### Build System
+
+* **deps:** update gcr.io/distroless/static:nonroot docker digest to ed05c7a ([#209](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/209)) ([cc86df2](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/cc86df2fd77c038083d283bc277e498fe442e50c))
+
 ## [1.0.51](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.50...v1.0.51) (2022-11-01)
 
 
