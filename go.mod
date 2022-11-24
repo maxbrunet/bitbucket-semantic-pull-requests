@@ -10,7 +10,7 @@ require (
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.8.1
 	go.uber.org/zap v1.23.0
-	gopkg.in/yaml.v2 v2.4.0
+	gopkg.in/yaml.v3 v3.0.1
 )
 
 require (
@@ -26,5 +26,4 @@ require (
 	golang.org/x/oauth2 v0.0.0-20180227000427-d7d64896b5ff // indirect
 	golang.org/x/sys v0.0.0-20220708085239-5a0f0661e09d // indirect
 	google.golang.org/appengine v1.0.0 // indirect
-	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
