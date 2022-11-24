@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.54](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.53...v1.0.54) (2022-11-24)
+
+
+### Build System
+
+* **deps:** update dependency gopkg.in/yaml.v3 to v3.0.1 ([#219](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/219)) ([627fc45](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/627fc45b0125ba45b6551bfb5dd1aaf85cfe98eb))
+
 ## [1.0.53](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.52...v1.0.53) (2022-11-24)
 
 
