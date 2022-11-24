@@ -11,8 +11,8 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/h2non/gock"
 	"github.com/stretchr/testify/require"
-	"gopkg.in/h2non/gock.v1"
 
 	"github.com/maxbrunet/bitbucket-semantic-pull-requests/internal/handler"
 )
