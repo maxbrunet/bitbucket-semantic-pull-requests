@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.55](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.54...v1.0.55) (2022-12-07)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/setup-go action to v3.4.0 ([#224](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/224)) ([095e118](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/095e118bc986068c1a8c39b3a868ec63b20061cf))
+* **deps:** update dependency @semantic-release/changelog to v6.0.2 ([#222](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/222)) ([7a4ab97](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/7a4ab9777e95bbad48e62e12b8abfe65d0f356a2))
+* **deps:** update dependency github.com/goreleaser/goreleaser to v1.13.0 ([#221](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/221)) ([7776d49](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/7776d498460176590c9ef125839c2072bbe386cb))
+* **deps:** update dependency github.com/goreleaser/goreleaser to v1.13.1 ([#226](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/226)) ([69f0491](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/69f04918de1dae4ef7a2e762a27e70adf69d7b65))
+* **deps:** update docker.io/library/busybox:1.35.0 docker digest to 224c1fd ([#229](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/229)) ([64ac0d3](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/64ac0d38141b72d4ad97af72a645c07dc43fde08))
+* **deps:** update docker.io/library/busybox:1.35.0 docker digest to 43eb090 ([#227](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/227)) ([c325770](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/c325770111bb80ea198d35ae126f038b55109a97))
+* **deps:** update docker.io/library/busybox:1.35.0 docker digest to 4c6d9fb ([#228](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/228)) ([99e37f2](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/99e37f2ee00b62e7a1fbd69f09479427c49e7eaf))
+* **deps:** update docker.io/library/busybox:1.35.0 docker digest to dd6a1bf ([#225](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/225)) ([ab678af](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/ab678afd8d5f8b0f802b2c9b2f5f6eaf668e3e98))
+* **deps:** update github/codeql-action action to v2.1.34 ([#220](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/220)) ([c7d3ebb](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/c7d3ebb9cae6ac397f5e9b8809b97c781635de2d))
+* **deps:** update github/codeql-action action to v2.1.35 ([#223](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/223)) ([7ec1619](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/7ec1619612b2ec382cc4c51b05cb7a9c589387f4))
+
+
+### Build System
+
+* **deps:** update go to v1.19.4 ([#230](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/230)) ([523856c](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/523856ca272742c93e964ea190bb28655b5da50f))
+* **deps:** update module go.uber.org/zap to v1.24.0 ([#231](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/231)) ([bf56249](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/bf5624920f964aed1eb1819d451838d9ddf497d0))
+
 ## [1.0.54](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.53...v1.0.54) (2022-11-24)
 
 
