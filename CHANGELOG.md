@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.58](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.57...v1.0.58) (2023-01-03)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/cache action to v3.2.0 ([#239](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/239)) ([f56a6e5](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/f56a6e56f6df2faae896ac7086547447583cfb05))
+* **deps:** update actions/cache action to v3.2.1 ([#241](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/241)) ([07741c8](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/07741c8fa5e9051517a5e40b7902b800a0d54dc1))
+* **deps:** update actions/cache action to v3.2.2 ([#242](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/242)) ([52e0e59](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/52e0e5900f872f023db7313bf2a559bdbee07deb))
+* **deps:** update docker.io/library/busybox:1.35.0 docker digest to f4ed5f2 ([#240](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/240)) ([74f30fe](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/74f30fea1a1b05ab848976478eeb70c2467215f0))
+
+
+### Build System
+
+* **deps:** update gcr.io/distroless/static:nonroot docker digest to cacb3d8 ([#243](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/243)) ([5656bb4](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/5656bb46b9205195ba6b7938c4ba665cb8b6b423))
+
 ## [1.0.57](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.56...v1.0.57) (2022-12-20)
 
 
