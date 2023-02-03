@@ -163,13 +163,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Login to GitHub Container Registry
-        uses: redhat-actions/podman-login@7283c5d4ffb37e87a455332f0d68b144536d842f # v1.5
-        with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-          # https://github.com/containers/image/blob/v5.24.0/pkg/docker/config/config.go#L36
-          auth_file_path: /run/containers/0/auth.json
+        run: podman login --username "${USERNAME}" --password "${PASSWORD}" "${REGISTRY}"
+        env:
+          USERNAME: ${{ github.actor }}
+          PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+          REGISTRY: ghcr.io
 
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@8f6ceb9d5aae5578b1dcda6af00008235204e7fa # tag=v3.2.0
@@ -184,3 +182,9 @@ jobs:
             @semantic-release/git@10.0.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Post Login to GitHub Container Registry
+        run: podman logout "${REGISTRY}"
+        if: always()
+        env:
+          REGISTRY: ghcr.io
