@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.72](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.71...v1.0.72) (2023-02-04)
+
+
+### Build System
+
+* **podman:** work around build args defaults bug ([#286](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/286)) ([6d6f5b1](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/6d6f5b1e4244c644214e883a93eb46b8a2dae61e))
+
 ## [1.0.71](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.70...v1.0.71) (2023-02-04)
 
 
