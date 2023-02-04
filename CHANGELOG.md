@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.64](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.63...v1.0.64) (2023-02-04)
+
+
+### Code Refactoring
+
+* shorten cmd main filename ([#270](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/270)) ([d59feb0](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/d59feb0a7ffe37c9a656420c1b304cefae5c4275))
+
+
+### Build System
+
+* build container image with Podman ([#271](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/271)) ([5034483](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/5034483192f7307b69f08c20fe90f81084aea324))
+* fix npm missing for semantic-release ([#274](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/274)) ([4555f87](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/4555f8770a6fd0f7827df2af4ea6bcfae79b254f))
+* fix podman login ([#272](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/272)) ([88f7932](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/88f79325b60efa7f879aac1cffe39a7990e48200))
+* fix podman login (take 2) ([#273](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/273)) ([026298b](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/026298b3156517fb16595be2299e41772d2f18e0))
+
+
+### Continuous Integration
+
+* fix git for semantic-release ([#276](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/276)) ([0fe8595](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/0fe8595532e5a7b225950c8dd3784fa649603b16))
+* use semantic-release dry-run ([#275](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/275)) ([8ec4dd2](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/8ec4dd2e8cc7a79642b301b260a5838a9c18832d))
+
 ## [1.0.63](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.62...v1.0.63) (2023-01-31)
 
 
