@@ -2,6 +2,8 @@ builds:
   - main: ./cmd/bitbucket-semantic-pull-requests
     env:
       - CGO_ENABLED=0
+    flags:
+      - -trimpath
     goos:
       - linux
       - windows
