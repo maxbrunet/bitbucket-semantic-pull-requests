@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.65](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.64...v1.0.65) (2023-02-04)
+
+
+### Continuous Integration
+
+* fix shell vars escape in semantic-release config ([#277](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/277)) ([9694e29](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/9694e2939c18deb37283a6c3da046bc10b5af4ea))
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency github.com/golangci/golangci-lint to v1.51.0 ([#278](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/278)) ([10de9b3](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/10de9b32c2714b71c2f2b32b9e781ff78119deb9))
+
+
+### Build System
+
+* **deps:** update go to v1.20.0 ([#269](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/269)) ([91f2436](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/91f24361e97894aee71895d972fefaa567f00e1a))
+
 ## [1.0.64](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.63...v1.0.64) (2023-02-04)
 
 
