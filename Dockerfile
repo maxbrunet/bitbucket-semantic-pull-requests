@@ -17,7 +17,7 @@ RUN mkdir /pick && \
         cp "/dist/bitbucket-semantic-pull-requests_${TARGETOS}_${TARGETARCH}/bitbucket-semantic-pull-requests" /pick; \
     fi
 
-FROM --platform="${TARGETPLATFORM:-linux/amd64}" gcr.io/distroless/static:nonroot@sha256:6b01107391648040c796967b49b7973188b7c9a6b1d49d06090db349248eba39
+FROM --platform="${TARGETPLATFORM:-linux/amd64}" gcr.io/distroless/static:nonroot@sha256:de235f7c7b4c98a96abf8a85ab877162d1fcbc0a29649f7017ef5dfd193bb6ed
 
 LABEL \
   org.opencontainers.image.source="https://github.com/maxbrunet/bitbucket-semantic-pull-requests" \
