@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.67](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.66...v1.0.67) (2023-02-04)
+
+
+### Build System
+
+* re-add v-prefix to image tag ([#280](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/280)) ([40fa332](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/40fa332f2358a96394e3dc11df9d9dc8007e3cdd))
+
 ## [1.0.66](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.65...v1.0.66) (2023-02-04)
 
 
