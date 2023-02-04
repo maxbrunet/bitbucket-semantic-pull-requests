@@ -34,10 +34,10 @@ plugins:
 
         podman build \
           --platform linux/amd64,linux/arm/v7,linux/arm64,linux/ppc64le,linux/s390x \
-          --manifest "\${IMAGE_NAME}:\${IMAGE_TAG}" .
+          --manifest "\\${IMAGE_NAME}:\\${IMAGE_TAG}" .
 
-        podman manifest push "\${IMAGE_NAME}:\${IMAGE_TAG}" "docker://\${IMAGE_NAME}:\${IMAGE_TAG}"
-        podman manifest push "\${IMAGE_NAME}:\${IMAGE_TAG}" "docker://\${IMAGE_NAME}:latest"
+        podman manifest push "\\${IMAGE_NAME}:\\${IMAGE_TAG}" "docker://\\${IMAGE_NAME}:\\${IMAGE_TAG}"
+        podman manifest push "\\${IMAGE_NAME}:\\${IMAGE_TAG}" "docker://\\${IMAGE_NAME}:latest"
 preset: conventionalcommits
 presetConfig:
   types:
