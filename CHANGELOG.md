@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.71](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.70...v1.0.71) (2023-02-04)
+
+
+### Build System
+
+* **go:** remove all file system paths from binary ([#284](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/284)) ([c03bcf1](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/c03bcf1628d906875136ecff48fccd8167f79f2b))
+
+
+### Miscellaneous Chores
+
+* **dockerfile:** clean up arguments ([#285](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/285)) ([416e5dd](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/416e5dd3d10413010760eb570d2b45e83dc61d45))
+
 ## [1.0.70](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.69...v1.0.70) (2023-02-04)
 
 
