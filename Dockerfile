@@ -1,5 +1,6 @@
 FROM --platform="${BUILDPLATFORM:-}" docker.io/library/busybox:1.36.0@sha256:7b3ccabffc97de872a30dfd234fd972a66d247c8cfc69b0550f276481852627c AS picker
 
+ARG TARGETPLATFORM=linux/amd64
 ARG TARGETOS=linux
 ARG TARGETARCH=amd64
 ARG TARGETVARIANT
