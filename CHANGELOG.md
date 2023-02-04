@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.68](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.67...v1.0.68) (2023-02-04)
+
+
+### Build System
+
+* fix TARGETARCH arg ([#281](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/281)) ([c1bea5f](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/c1bea5f322b6b5138f27a6cabeccf81830802274))
+
 ## [1.0.67](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.66...v1.0.67) (2023-02-04)
 
 
