@@ -110,7 +110,7 @@ jobs:
         uses: goreleaser/goreleaser-action@f82d6c1c344bcacabba2c841718984797f664a6b # v4.2.0
         with:
           # renovate: datasource=go depName=github.com/goreleaser/goreleaser
-          version: v1.15.0
+          version: v1.15.1
           args: build --rm-dist --single-target --snapshot
 
       - name: Build container image
@@ -161,7 +161,7 @@ jobs:
         uses: goreleaser/goreleaser-action@f82d6c1c344bcacabba2c841718984797f664a6b # v4.2.0
         with:
           # renovate: datasource=go depName=github.com/goreleaser/goreleaser
-          version: v1.15.0
+          version: v1.15.1
           install-only: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
