@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.77](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.76...v1.0.77) (2023-02-22)
+
+
+### Miscellaneous Chores
+
+* **deps:** update quay.io/containers/podman docker tag to v4.4.1 ([#298](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/298)) ([2483d96](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/2483d967d5f82ee88a4f635e9d81a3a45b3e9e3e))
+
+
+### Build System
+
+* **deps:** update gcr.io/distroless/static:nonroot docker digest to 20f91f0 ([#299](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/299)) ([748c9a2](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/748c9a2642c4ac644926c66f33baf2c969528338))
+
 ## [1.0.76](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.75...v1.0.76) (2023-02-14)
 
 
