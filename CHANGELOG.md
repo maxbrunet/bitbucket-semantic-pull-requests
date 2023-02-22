@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.78](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.77...v1.0.78) (2023-02-22)
+
+
+### Build System
+
+* **deps:** update gcr.io/distroless/static:nonroot docker digest to 21e5d22 ([#300](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/300)) ([3203a6d](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/3203a6d22274afdf594d6b6bd2b32b311f2cdc9e))
+
 ## [1.0.77](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.76...v1.0.77) (2023-02-22)
 
 
