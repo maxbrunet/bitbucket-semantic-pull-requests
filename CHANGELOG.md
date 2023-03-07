@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.81](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.80...v1.0.81) (2023-03-07)
+
+
+### Miscellaneous Chores
+
+* **deps:** update cycjimmy/semantic-release-action action to v3.3.0 ([#307](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/307)) ([f420cfa](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/f420cfa0ee5bc0bfa06fa588101792444b1900ef))
+
+
+### Build System
+
+* **deps:** update go to v1.20.2 ([#308](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/308)) ([d1d6994](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/d1d699492a45c7f4b96ca47fb3ca968d0f0f5785))
+
 ## [1.0.80](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.79...v1.0.80) (2023-03-07)
 
 
