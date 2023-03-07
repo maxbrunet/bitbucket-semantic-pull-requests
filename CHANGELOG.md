@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.80](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.79...v1.0.80) (2023-03-07)
+
+
+### Miscellaneous Chores
+
+* **deps:** update docker.io/library/busybox:1.36.0 docker digest to c118f53 ([#305](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/305)) ([3b2306d](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/3b2306db6b3dc798f137d6788165c2d76e49471b))
+* **deps:** update quay.io/containers/podman docker tag to v4.4.2 ([#304](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/304)) ([c282eb9](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/c282eb9ac7c1dc1faae39a85cc00aa2311aca54f))
+
+
+### Build System
+
+* **deps:** update module github.com/leodido/go-conventionalcommits to v0.11.0 ([#306](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/306)) ([e57c5e5](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/e57c5e5164d4b7a0738beba63d8c65a29c51ab5e))
+
 ## [1.0.79](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.78...v1.0.79) (2023-03-04)
 
 
