@@ -45,7 +45,8 @@
       "semanticCommitType": "build"
     },
     {
-      "matchPackageNames": ["gcr.io/distroless/static"],
+      "matchPackageNames": ["cgr.dev/chainguard/static"],
+      "extends": ["schedule:monthly"],
       "semanticCommitType": "build"
     }
   ],
@@ -54,6 +55,13 @@
       "description": "Update version keys in YAML files",
       "fileMatch": ["(^|/).*.ya?ml$"],
       "matchStrings": ["# renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>[^\\s]+?)(?: packageName=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[a-z-0-9]+?))?\\s*[\\w-_]*version: (?<currentValue>.*?)\\s"]
+    },
+    {
+      "description": "Update base image in .goreleaser.yml",
+      "fileMatch": ["(^|/)\\.goreleaser\\.ya?ml$"],
+      "matchStrings": ["base_image:\\s+[\"']?(?<depName>\\S+?):(?<currentValue>\\S+?)(?:@(?<currentDigest>sha256:\\S+))?[\"']?\\s"],
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "docker"
     },
     {
       "description": "Update Golang in .go-version file",

@@ -1,5 +1,7 @@
 builds:
   - main: ./cmd/bitbucket-semantic-pull-requests
+    ldflags:
+      - '-X main.version={{ .Version }} -X main.commit={{ .Commit }} -X main.date={{ .CommitDate }}'
     env:
       - CGO_ENABLED=0
     flags:
@@ -17,9 +19,30 @@ builds:
       - s390x
     goarm:
       - '7'
+    mod_timestamp: '{{ .CommitTimestamp }}'
 archives:
   - name_template: '{{ .ProjectName }}-{{ .Os }}-{{ .Arch }}{{ if .Arm }}v{{
       .Arm }}{{ end }}{{ if .Mips }}-{{ .Mips }}{{ end }}'
     format: binary
 checksum:
   name_template: '{{ .ProjectName }}-checksums.txt'
+kos:
+  - repository: ghcr.io/maxbrunet/bitbucket-semantic-pull-requests
+    bare: true
+    tags:
+      - '{{ .Tag }}'
+      - latest
+    base_image: cgr.dev/chainguard/static:latest@sha256:10893363c088bbbce8c752e876cb7a1f9f52f75b7129532275a09852cdd041ac
+    creation_time: '{{ .CommitTimestamp }}'
+    ko_data_creation_time: '{{ .CommitTimestamp }}'
+    labels:
+      org.opencontainers.image.source: https://github.com/maxbrunet/bitbucket-semantic-pull-requests
+      org.opencontainers.image.url: https://github.com/maxbrunet/bitbucket-semantic-pull-requests
+      org.opencontainers.image.licenses: Apache-2.0
+    platforms:
+      - linux/386
+      - linux/amd64
+      - linux/arm/v7
+      - linux/arm64
+      - linux/ppc64le
+      - linux/s390x
