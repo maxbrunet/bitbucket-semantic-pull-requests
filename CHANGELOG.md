@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.87](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.86...v1.0.87) (2023-04-10)
+
+
+### Miscellaneous Chores
+
+* **goreleaser:** use `--clean` instead of deprecated `--rm-dist` ([#337](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/337)) ([d035172](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/d035172663e69a99cfed09fff8700878e6bac131))
+
+
+### Build System
+
+* sign container image ([#338](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/338)) ([1a7fe2d](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/1a7fe2d3cb7bba17ca2928fa1559f124ccdf6b81))
+
 ## [1.0.86](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.85...v1.0.86) (2023-04-10)
 
 
