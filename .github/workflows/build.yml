@@ -109,7 +109,7 @@ jobs:
         with:
           # renovate: datasource=go depName=github.com/goreleaser/goreleaser
           version: v1.17.0
-          args: build --rm-dist --single-target --snapshot
+          args: build --clean --single-target --snapshot
 
   semantic-release:
     needs: [codeql-analyze, build, lint, test]

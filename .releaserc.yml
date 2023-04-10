@@ -24,7 +24,7 @@ plugins:
 
         ${nextRelease.notes}
   - - "@semantic-release/exec"
-    - publishCmd: goreleaser release --rm-dist
+    - publishCmd: goreleaser release --clean
 preset: conventionalcommits
 presetConfig:
   types:
