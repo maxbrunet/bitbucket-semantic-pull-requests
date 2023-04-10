@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.86](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.85...v1.0.86) (2023-04-10)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency github.com/goreleaser/goreleaser to v1.17.0 ([#335](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/335)) ([554c397](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/554c3974c6a9426fca4d090c88e7c90df058a7af))
+* **deps:** update github/codeql-action action to v2.2.10 ([#331](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/331)) ([6b835e8](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/6b835e8c7ff2db8e385f6abd426ee914b71969c6))
+* **deps:** update github/codeql-action action to v2.2.11 ([#332](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/332)) ([4b15212](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/4b1521230fb28d28e664a37396a44aff6c3232c6))
+* **deps:** update quay.io/containers/podman docker tag to v4.4.4 ([#333](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/333)) ([7aa38f5](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/7aa38f58c44016f6ebe7542aedd1a4101056d5ba))
+* **renovate:** move postUpdateOptions to top-level ([#334](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/334)) ([f374b7d](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/f374b7dbe9867276ef176b86a2faf91a08baf838))
+
+
+### Build System
+
+* build container image with Ko ([#336](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/336)) ([b625287](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/b62528774a851fe37b6e3fae34e8a6ca48c71c1f))
+
 ## [1.0.85](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.84...v1.0.85) (2023-04-04)
 
 
