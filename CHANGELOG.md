@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.89](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.88...v1.0.89) (2023-04-15)
+
+
+### Bug Fixes
+
+* set proper log level for HTTP server errors ([#343](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/343)) ([fc1d507](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/fc1d507364903e9f251d50958678d40b8d2c4a37))
+
 ## [1.0.88](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.87...v1.0.88) (2023-04-14)
 
 
