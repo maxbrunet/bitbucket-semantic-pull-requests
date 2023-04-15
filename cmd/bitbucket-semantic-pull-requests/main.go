@@ -65,14 +65,22 @@ func main() {
 
 	spr, err := handler.NewSemanticPullRequests(*bitbucketUsername, *bitbucketPassword, logger)
 	if err != nil {
-		logger.Error("failed to initialize semantic-pull-requests", zap.Error(err))
+		logger.Fatal("failed to initialize semantic-pull-requests", zap.Error(err))
+	}
+
+	errorLog, err := zap.NewStdLogAt(logger, zap.ErrorLevel)
+	if err != nil {
+		logger.Fatal(
+			"failed to create standard error logger",
+			zap.Error(err),
+		)
 	}
 
 	//nolint:gomnd
 	server := &http.Server{
 		Addr:     *listenAddr,
 		Handler:  mux,
-		ErrorLog: zap.NewStdLog(logger),
+		ErrorLog: errorLog,
 		BaseContext: func(net.Listener) context.Context {
 			return context.WithValue(
 				context.Background(),
