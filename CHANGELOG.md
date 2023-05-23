@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.93](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.92...v1.0.93) (2023-05-23)
+
+
+### Build System
+
+* **deps:** update module github.com/ktrysmt/go-bitbucket to v0.9.57 ([#359](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/359)) ([4feecb0](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/4feecb075861ed45186300b27a14fd1683c0e58e))
+
 ## [1.0.92](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.91...v1.0.92) (2023-05-19)
 
 
