@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/go-playground/webhooks/v6 v6.0.1
 	github.com/h2non/gock v1.2.0
-	github.com/ktrysmt/go-bitbucket v0.9.57
+	github.com/ktrysmt/go-bitbucket v0.9.58
 	github.com/leodido/go-conventionalcommits v0.11.0
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.8.3
