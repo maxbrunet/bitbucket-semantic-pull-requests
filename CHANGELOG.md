@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.96](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.95...v1.0.96) (2023-06-01)
+
+
+### Build System
+
+* **deps:** update cgr.dev/chainguard/static:latest docker digest to ee47224 ([#364](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/364)) ([4658270](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/4658270e875caa21676bdc499e4b29e00e602122))
+
 ## [1.0.95](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.94...v1.0.95) (2023-05-28)
 
 
