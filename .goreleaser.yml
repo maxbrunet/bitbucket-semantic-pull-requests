@@ -32,7 +32,7 @@ kos:
     tags:
       - '{{ .Tag }}'
       - latest
-    base_image: cgr.dev/chainguard/static:latest@sha256:a126aa44a73d2319d6375ef4cf15a50d9c409db76a87235be6f0c8522afdadd5
+    base_image: cgr.dev/chainguard/static:latest@sha256:ee47224a2afc674c1f1089b9dea97d5ee400cf2fff3797398778450a4cfb2a8d
     creation_time: '{{ .CommitTimestamp }}'
     ko_data_creation_time: '{{ .CommitTimestamp }}'
     labels:
