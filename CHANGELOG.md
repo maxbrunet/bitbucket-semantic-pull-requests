@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.97](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.96...v1.0.97) (2023-06-06)
+
+
+### Miscellaneous Chores
+
+* **deps:** update github/codeql-action action to v2.3.6 ([#365](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/365)) ([20ad821](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/20ad8218eb99f07e966159d619fcd04b80dcfc96))
+* **deps:** update golangci/golangci-lint-action action to v3.5.0 ([#366](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/366)) ([42fba13](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/42fba13c0774d0fb4f9bd1b5d63fc932bbf456a4))
+
+
+### Build System
+
+* **deps:** update module github.com/stretchr/testify to v1.8.4 ([#367](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/367)) ([527b8d3](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/527b8d380dcea4baeee012554927fc620450f4ec))
+
 ## [1.0.96](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.95...v1.0.96) (2023-06-01)
 
 
