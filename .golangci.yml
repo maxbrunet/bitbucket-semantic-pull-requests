@@ -15,6 +15,7 @@ linters:
     - structcheck
     - varcheck
     # Inappropriate
+    - depguard
     - exhaustruct
     - funlen
     - gochecknoglobals
