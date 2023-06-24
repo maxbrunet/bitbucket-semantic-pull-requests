@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/go-playground/webhooks/v6 v6.1.0
 	github.com/h2non/gock v1.2.0
-	github.com/ktrysmt/go-bitbucket v0.9.59
+	github.com/ktrysmt/go-bitbucket v0.9.60
 	github.com/leodido/go-conventionalcommits v0.11.0
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.8.4
@@ -22,9 +22,9 @@ require (
 	github.com/sirupsen/logrus v1.8.1 // indirect
 	go.uber.org/atomic v1.7.0 // indirect
 	go.uber.org/multierr v1.6.0 // indirect
-	golang.org/x/net v0.10.0 // indirect
-	golang.org/x/oauth2 v0.8.0 // indirect
-	golang.org/x/sys v0.8.0 // indirect
+	golang.org/x/net v0.11.0 // indirect
+	golang.org/x/oauth2 v0.9.0 // indirect
+	golang.org/x/sys v0.9.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/protobuf v1.28.0 // indirect
 )
