@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.104](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.103...v1.0.104) (2023-07-23)
+
+
+### Build System
+
+* **deps:** update module github.com/go-playground/webhooks/v6 to v6.2.0 ([#394](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/394)) ([e9caa29](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/e9caa29ba6ddb2952bd64cf2ea470fa2e99bd806))
+
 ## [1.0.103](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.102...v1.0.103) (2023-07-20)
 
 
