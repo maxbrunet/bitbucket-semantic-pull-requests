@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.111](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.110...v1.0.111) (2023-08-17)
+
+
+### Miscellaneous Chores
+
+* **deps:** update module github.com/golangci/golangci-lint to v1.54.0 ([#408](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/408)) ([3f53ffe](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/3f53ffeb9b1e6c8cd3763d16c5e28f9f79d49a42))
+* **deps:** update module github.com/goreleaser/goreleaser to v1.20.0 ([#409](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/409)) ([2f9bdcc](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/2f9bdccc48d5433137eab36b858ec44e2d780ee1))
+
+
+### Build System
+
+* **deps:** update module github.com/go-playground/webhooks/v6 to v6.3.0 ([#410](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/410)) ([cf8c49a](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/cf8c49ad961199b05652c6155861e0cff4a5cecd))
+
 ## [1.0.110](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.109...v1.0.110) (2023-08-15)
 
 
