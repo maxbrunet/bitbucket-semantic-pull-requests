@@ -108,7 +108,7 @@ jobs:
         uses: goreleaser/goreleaser-action@3fa32b8bb5620a2c1afe798654bbad59f9da4906 # v4.4.0
         with:
           # renovate: datasource=go depName=github.com/goreleaser/goreleaser
-          version: v1.19.2
+          version: v1.20.0
           args: build --clean --single-target --snapshot
 
   semantic-release:
@@ -141,7 +141,7 @@ jobs:
         uses: goreleaser/goreleaser-action@3fa32b8bb5620a2c1afe798654bbad59f9da4906 # v4.4.0
         with:
           # renovate: datasource=go depName=github.com/goreleaser/goreleaser
-          version: v1.19.2
+          version: v1.20.0
           install-only: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
