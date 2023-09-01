@@ -100,22 +100,16 @@ func HandlePullRequestUpdate(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	logReqFields := []zap.Field{
+	logger := spr.Logger.With(
 		zap.String("repository", payload.Repository.FullName),
 		zap.Int64("pull_request_id", payload.PullRequest.ID),
 		zap.String("revision", payload.PullRequest.Source.Commit.Hash),
-	}
-	spr.Logger.Info(
-		"handling pull request update",
-		logReqFields...,
 	)
+	logger.Info("handling pull request update")
 
 	userConfig, err := GetUserConfig(spr.Client, payload.Repository.Owner.UUID, payload.Repository.UUID)
 	if err != nil {
-		spr.Logger.Debug(
-			"failed to get user config",
-			append(logReqFields, zap.Error(err))...,
-		)
+		logger.Debug("failed to get user config", zap.Error(err))
 	}
 
 	machine := NewSemanticMachine(userConfig.Types == nil)
@@ -128,10 +122,7 @@ func HandlePullRequestUpdate(w http.ResponseWriter, r *http.Request) {
 		strconv.Itoa(int(payload.PullRequest.ID)),
 	)
 	if err != nil {
-		spr.Logger.Error(
-			"failed to get commits",
-			append(logReqFields, zap.Error(err))...,
-		)
+		logger.Error("failed to get commits", zap.Error(err))
 	}
 
 	var hasSemanticCommits bool
@@ -166,9 +157,6 @@ func HandlePullRequestUpdate(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if _, err := spr.Client.Repositories.Commits.CreateCommitStatus(co, cso); err != nil {
-		spr.Logger.Error(
-			"failed to create commit status",
-			append(logReqFields, zap.Error(err))...,
-		)
+		logger.Error("failed to create commit status", zap.Error(err))
 	}
 }
