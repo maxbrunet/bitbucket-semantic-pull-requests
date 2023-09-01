@@ -2,7 +2,6 @@ package handler_test
 
 import (
 	"bytes"
-	"context"
 	"encoding/json"
 	"fmt"
 	"net/http"
@@ -13,8 +12,6 @@ import (
 
 	"github.com/h2non/gock"
 	"github.com/stretchr/testify/require"
-
-	"github.com/maxbrunet/bitbucket-semantic-pull-requests/internal/handler"
 )
 
 const (
@@ -86,8 +83,6 @@ func runTestCase(t *testing.T, tc *testCase) {
 	}
 
 	req := httptest.NewRequest(http.MethodPost, "/", bytes.NewReader(data))
-	ctx := context.WithValue(req.Context(), handler.SemanticPullRequestsKey, spr)
-	req = req.WithContext(ctx)
 	req.Header.Set("X-Event-Key", tc.event)
 	req.Header.Set("Content-Type", "application/json")
 	rec := httptest.NewRecorder()
@@ -129,7 +124,7 @@ func runTestCase(t *testing.T, tc *testCase) {
 		Reply(200).
 		JSON(map[string]string{})
 
-	handler.HandlePullRequestUpdate(rec, req)
+	spr.HandlePullRequestUpdate(rec, req)
 
 	if gock.HasUnmatchedRequest() {
 		t.Error("Cound not matched all requests:")
@@ -152,7 +147,7 @@ func TestGetRoot(t *testing.T) {
 			req := httptest.NewRequest(m, "/", nil)
 			rec := httptest.NewRecorder()
 
-			handler.HandlePullRequestUpdate(rec, req)
+			spr.HandlePullRequestUpdate(rec, req)
 
 			res := rec.Result()
 			defer res.Body.Close()

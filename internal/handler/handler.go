@@ -3,20 +3,12 @@ package handler
 
 import (
 	"errors"
-	"log"
 	"net/http"
 	"strconv"
 
 	webhook "github.com/go-playground/webhooks/v6/bitbucket"
 	"github.com/ktrysmt/go-bitbucket"
 	"go.uber.org/zap"
-)
-
-type contextKey int
-
-const (
-	// SemanticPullRequestsKey is the http.Request context key containing the initialized SemanticPullRequests.
-	SemanticPullRequestsKey contextKey = 0
 )
 
 func isSemanticPullRequest(cfg *UserConfig, hasSemanticTitle, hasSemanticCommits bool) bool {
@@ -58,15 +50,10 @@ func getStatusDescription(cfg *UserConfig, hasSemanticTitle, hasSemanticCommits,
 }
 
 // HandlePullRequestUpdate handles pull-request update events.
-func HandlePullRequestUpdate(w http.ResponseWriter, r *http.Request) {
+func (spr *SemanticPullRequests) HandlePullRequestUpdate(w http.ResponseWriter, r *http.Request) {
 	// Useful for simple heath check
 	if r.Method == http.MethodGet || r.Method == http.MethodHead {
 		return
-	}
-
-	spr, ok := r.Context().Value(SemanticPullRequestsKey).(*SemanticPullRequests)
-	if !ok {
-		log.Println("Error: failed to retrieve semanticPullRequests from context")
 	}
 
 	pl, err := spr.Hook.Parse(r, webhook.PullRequestCreatedEvent, webhook.PullRequestUpdatedEvent)
