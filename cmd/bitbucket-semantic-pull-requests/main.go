@@ -2,10 +2,8 @@
 package main
 
 import (
-	"context"
 	goflag "flag"
 	"log"
-	"net"
 	"net/http"
 	"os"
 	"time"
@@ -60,13 +58,13 @@ func main() {
 		logger.Fatal("Bitbucket username and password are both required")
 	}
 
-	mux := http.NewServeMux()
-	mux.HandleFunc("/", handler.HandlePullRequestUpdate)
-
 	spr, err := handler.NewSemanticPullRequests(*bitbucketUsername, *bitbucketPassword, logger)
 	if err != nil {
 		logger.Fatal("failed to initialize semantic-pull-requests", zap.Error(err))
 	}
+
+	mux := http.NewServeMux()
+	mux.HandleFunc("/", spr.HandlePullRequestUpdate)
 
 	errorLog, err := zap.NewStdLogAt(logger, zap.ErrorLevel)
 	if err != nil {
@@ -78,16 +76,9 @@ func main() {
 
 	//nolint:gomnd
 	server := &http.Server{
-		Addr:     *listenAddr,
-		Handler:  mux,
-		ErrorLog: errorLog,
-		BaseContext: func(net.Listener) context.Context {
-			return context.WithValue(
-				context.Background(),
-				handler.SemanticPullRequestsKey,
-				spr,
-			)
-		},
+		Addr:              *listenAddr,
+		Handler:           mux,
+		ErrorLog:          errorLog,
 		ReadHeaderTimeout: 5 * time.Second,
 	}
 
