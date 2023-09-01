@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.113](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.112...v1.0.113) (2023-09-01)
+
+
+### Bug Fixes
+
+* **handler:** remove usage of context ([#419](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/419)) ([0de90f5](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/0de90f54345ff14161b9c0f07d3434860673ca67))
+
 ## [1.0.112](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.111...v1.0.112) (2023-09-01)
 
 
