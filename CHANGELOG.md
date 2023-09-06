@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.115](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.114...v1.0.115) (2023-09-06)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/checkout action to v4 ([#422](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/422)) ([f669261](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/f669261a88d84a9a0c45df8a0984837a264231c8))
+* **deps:** update cycjimmy/semantic-release-action action to v4 ([#416](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/416)) ([2ac6634](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/2ac6634136b4c7ba488f00060ef7ad4a3f91226b))
+* **deps:** update dependency conventional-changelog-conventionalcommits to v7 ([#413](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/413)) ([4f8b300](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/4f8b300a4523ea97d6ea29ffb5b53ec5f682eaeb))
+* **deps:** update dependency semantic-release to v21 ([#249](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/249)) ([6d7b147](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/6d7b147855d5c2c3196a71db0d047d08f3d70728))
+* **deps:** update goreleaser/goreleaser-action action to v4.5.0 ([#423](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/423)) ([628a001](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/628a001dc49f92b71879367437339b6c17432dea))
+* **deps:** update goreleaser/goreleaser-action action to v4.6.0 ([#424](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/424)) ([21b52c1](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/21b52c1bc9d67e4a36675b1dd70f44c5e2e4ed7a))
+* **deps:** update sigstore/cosign-installer action to v3.1.2 ([#420](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/420)) ([614d0fd](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/614d0fd04d31ae7ccbac07ec31c052afff7b1ccb))
+* **renovate:** refresh configuration ([#421](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/421)) ([7183e10](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/7183e10964a387dc5db5565d337312b9ce004c30))
+
+
+### Build System
+
+* **deps:** update go to v1.21.1 ([#425](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/425)) ([84bd4bf](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/84bd4bf3766a2bc5b29154ddfd06f845bbd08bd1))
+
 ## [1.0.114](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.113...v1.0.114) (2023-09-01)
 
 
