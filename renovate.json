@@ -11,10 +11,7 @@
   "assignees": ["maxbrunet"],
   "internalChecksFilter": "strict",
   "platformAutomerge": true,
-  "postUpdateOptions": [
-    "gomodTidy",
-    "gomodUpdateImportPaths"
-  ],
+  "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
   "packageRules": [
     {
       "description": "One week stability period for Go packages",
@@ -48,18 +45,22 @@
       "semanticCommitType": "build"
     }
   ],
-  "regexManagers": [
+  "customManagers": [
     {
       "description": "Update version keys in YAML files",
       "customType": "regex",
       "fileMatch": ["(^|/).*.ya?ml$"],
-      "matchStrings": ["# renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>[^\\s]+?)(?: packageName=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[a-z-0-9]+?))?\\s*[\\w-_]*version: (?<currentValue>.*?)\\s"]
+      "matchStrings": [
+        "# renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>[^\\s]+?)(?: packageName=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[a-z-0-9]+?))?\\s*[\\w-_]*version: (?<currentValue>.*?)\\s"
+      ]
     },
     {
       "description": "Update base image in .goreleaser.yml",
       "customType": "regex",
       "fileMatch": ["(^|/)\\.goreleaser\\.ya?ml$"],
-      "matchStrings": ["base_image:\\s+[\"']?(?<depName>\\S+?):(?<currentValue>\\S+?)(?:@(?<currentDigest>sha256:\\S+))?[\"']?\\s"],
+      "matchStrings": [
+        "base_image:\\s+[\"']?(?<depName>\\S+?):(?<currentValue>\\S+?)(?:@(?<currentDigest>sha256:\\S+))?[\"']?\\s"
+      ],
       "datasourceTemplate": "docker",
       "versioningTemplate": "docker"
     },
