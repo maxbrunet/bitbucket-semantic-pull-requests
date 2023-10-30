@@ -133,7 +133,7 @@ func runTestCase(t *testing.T, tc *testCase) {
 			t.Log(string(bytes))
 		}
 	}
-	require.Equal(t, true, gock.IsDone())
+	require.True(t, gock.IsDone())
 }
 
 func TestGetRoot(t *testing.T) {
