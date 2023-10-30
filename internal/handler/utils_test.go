@@ -13,7 +13,7 @@ func TestContains(t *testing.T) {
 
 	contains := handler.Contains([]string{"foo", "bar"}, "foo")
 
-	require.Equal(t, true, contains)
+	require.True(t, contains)
 }
 
 func TestDoesNotContain(t *testing.T) {
@@ -21,5 +21,5 @@ func TestDoesNotContain(t *testing.T) {
 
 	contains := handler.Contains([]string{"foobar", "barfoo"}, "foo")
 
-	require.Equal(t, false, contains)
+	require.False(t, contains)
 }

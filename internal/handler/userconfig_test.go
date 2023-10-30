@@ -24,18 +24,18 @@ func TestUserConfigNotFound(t *testing.T) {
 
 	cfg, err := handler.GetUserConfig(spr.Client, ownerUUID, repositoryUUID)
 
-	require.Equal(t, true, *cfg.Enabled)
-	require.Equal(t, false, *cfg.TitleOnly)
-	require.Equal(t, false, *cfg.CommitsOnly)
-	require.Equal(t, false, *cfg.TitleOnly)
-	require.Equal(t, false, *cfg.TitleAndCommits)
-	require.Equal(t, false, *cfg.AnyCommit)
+	require.True(t, *cfg.Enabled)
+	require.False(t, *cfg.TitleOnly)
+	require.False(t, *cfg.CommitsOnly)
+	require.False(t, *cfg.TitleOnly)
+	require.False(t, *cfg.TitleAndCommits)
+	require.False(t, *cfg.AnyCommit)
 	require.Nil(t, cfg.Scopes)
 	require.Nil(t, cfg.Types)
-	require.Equal(t, false, *cfg.AllowMergeCommits)
-	require.Equal(t, false, *cfg.AllowRevertCommits)
+	require.False(t, *cfg.AllowMergeCommits)
+	require.False(t, *cfg.AllowRevertCommits)
 	require.Equal(t, handler.ErrGettingUserConfig, err)
-	require.Equal(t, true, gock.IsDone())
+	require.True(t, gock.IsDone())
 }
 
 func TestUserConfigInvalid(t *testing.T) {
@@ -52,18 +52,18 @@ func TestUserConfigInvalid(t *testing.T) {
 
 	cfg, err := handler.GetUserConfig(spr.Client, ownerUUID, repositoryUUID)
 
-	require.Equal(t, true, *cfg.Enabled)
-	require.Equal(t, false, *cfg.TitleOnly)
-	require.Equal(t, false, *cfg.CommitsOnly)
-	require.Equal(t, false, *cfg.TitleOnly)
-	require.Equal(t, false, *cfg.TitleAndCommits)
-	require.Equal(t, false, *cfg.AnyCommit)
+	require.True(t, *cfg.Enabled)
+	require.False(t, *cfg.TitleOnly)
+	require.False(t, *cfg.CommitsOnly)
+	require.False(t, *cfg.TitleOnly)
+	require.False(t, *cfg.TitleAndCommits)
+	require.False(t, *cfg.AnyCommit)
 	require.Nil(t, cfg.Scopes)
 	require.Nil(t, cfg.Types)
-	require.Equal(t, false, *cfg.AllowMergeCommits)
-	require.Equal(t, false, *cfg.AllowRevertCommits)
+	require.False(t, *cfg.AllowMergeCommits)
+	require.False(t, *cfg.AllowRevertCommits)
 	require.Equal(t, handler.ErrParsingUserConfig, err)
-	require.Equal(t, true, gock.IsDone())
+	require.True(t, gock.IsDone())
 }
 
 func TestUserConfigFullValid(t *testing.T) {
@@ -93,16 +93,16 @@ allowRevertCommits: true
 
 	cfg, err := handler.GetUserConfig(spr.Client, ownerUUID, repositoryUUID)
 
-	require.Equal(t, false, *cfg.Enabled)
-	require.Equal(t, true, *cfg.TitleOnly)
-	require.Equal(t, true, *cfg.CommitsOnly)
-	require.Equal(t, true, *cfg.TitleOnly)
-	require.Equal(t, true, *cfg.TitleAndCommits)
-	require.Equal(t, true, *cfg.AnyCommit)
+	require.False(t, *cfg.Enabled)
+	require.True(t, *cfg.TitleOnly)
+	require.True(t, *cfg.CommitsOnly)
+	require.True(t, *cfg.TitleOnly)
+	require.True(t, *cfg.TitleAndCommits)
+	require.True(t, *cfg.AnyCommit)
 	require.Equal(t, []string{"scope1", "scope2"}, *cfg.Scopes)
 	require.Equal(t, []string{"type1", "type2"}, *cfg.Types)
-	require.Equal(t, true, *cfg.AllowMergeCommits)
-	require.Equal(t, true, *cfg.AllowRevertCommits)
-	require.Nil(t, err)
-	require.Equal(t, true, gock.IsDone())
+	require.True(t, *cfg.AllowMergeCommits)
+	require.True(t, *cfg.AllowRevertCommits)
+	require.NoError(t, err)
+	require.True(t, gock.IsDone())
 }
