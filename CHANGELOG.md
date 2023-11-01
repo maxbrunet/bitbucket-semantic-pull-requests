@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.124](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.123...v1.0.124) (2023-11-01)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency semantic-release to v22.0.6 ([#457](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/457)) ([a1a368b](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/a1a368b28439ec9910ecf2f3f7d5e7e7ebee6dfd))
+* **deps:** update github/codeql-action action to v2.22.5 ([#454](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/454)) ([074a907](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/074a907baccbfcf622455dac4c62b4f926da3f28))
+* **deps:** update module github.com/golangci/golangci-lint to v1.55.0 ([#455](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/455)) ([7af8416](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/7af84163fd8442f2df9b29551a624c32b97a5447))
+* **deps:** update module github.com/golangci/golangci-lint to v1.55.1 ([#458](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/458)) ([3241a15](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/3241a1521a63c264374d47b67ddbca74a306ec96))
+
+
+### Tests
+
+* lint tests with testifylint ([#456](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/456)) ([997d113](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/997d113ac49779e6230e9b88e0847a85564cea6f))
+
+
+### Build System
+
+* **deps:** update cgr.dev/chainguard/static:latest docker digest to d346587 ([#459](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/459)) ([adc931d](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/adc931d67024dc5b4a911863528eeffd739c6c7f))
+
 ## [1.0.123](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.122...v1.0.123) (2023-10-21)
 
 
