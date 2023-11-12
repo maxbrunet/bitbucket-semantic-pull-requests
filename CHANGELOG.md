@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.125](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.124...v1.0.125) (2023-11-12)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency semantic-release to v22.0.7 ([#460](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/460)) ([df01fb7](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/df01fb7b1e168ba30f02b52de0fc9feffa769018))
+* **deps:** update module github.com/golangci/golangci-lint to v1.55.2 ([#464](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/464)) ([89985c3](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/89985c32c6b2dc55f10036f85962d89f40833a2b))
+* **deps:** update sigstore/cosign-installer action to v3.2.0 ([#463](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/463)) ([6b3c23b](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/6b3c23b8a0a3fa6feed05226046d9cb49b379361))
+* **renovate:** keep version range for go mod directive ([#462](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/462)) ([6492e66](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/6492e66a1142195c9fa1357b864772e629162075))
+
+
+### Build System
+
+* **deps:** update go to v1.21.4 ([#461](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/461)) ([0e2ada2](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/0e2ada2568832b35a36495901816cdeff20526d5))
+
 ## [1.0.124](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.123...v1.0.124) (2023-11-01)
 
 
