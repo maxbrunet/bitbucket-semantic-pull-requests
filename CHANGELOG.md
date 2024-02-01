@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.134](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.133...v1.0.134) (2024-02-01)
+
+
+### Miscellaneous Chores
+
+* **deps:** update sigstore/cosign-installer action to v3.4.0 ([#494](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/494)) ([fa70516](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/fa70516e450b0356079987a61ecd81b663dbbfa6))
+
+
+### Build System
+
+* **deps:** update cgr.dev/chainguard/static:latest docker digest to 17c4607 ([#495](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/495)) ([fd0fdb3](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/fd0fdb373d57cf9110790a52809a7d16e952902f))
+
 ## [1.0.133](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.132...v1.0.133) (2024-01-30)
 
 
