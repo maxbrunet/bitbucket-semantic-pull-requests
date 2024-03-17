@@ -46,3 +46,11 @@ kos:
       - linux/arm64
       - linux/ppc64le
       - linux/s390x
+docker_signs:
+  - artifacts: manifests
+    cmd: cosign
+    args:
+      - sign
+      - --yes
+      - ${artifact}
+    output: true

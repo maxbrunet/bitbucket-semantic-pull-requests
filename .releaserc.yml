@@ -24,9 +24,7 @@ plugins:
 
         ${nextRelease.notes}
   - - "@semantic-release/exec"
-    - publishCmd: |
-        goreleaser release --clean
-        cosign sign --yes ghcr.io/maxbrunet/bitbucket-semantic-pull-requests:v${nextRelease.version}
+    - publishCmd: goreleaser release --clean
 preset: conventionalcommits
 presetConfig:
   types:
