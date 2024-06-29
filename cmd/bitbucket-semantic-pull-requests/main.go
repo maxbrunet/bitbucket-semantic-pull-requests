@@ -74,7 +74,7 @@ func main() {
 		)
 	}
 
-	//nolint:gomnd
+	//nolint:mnd
 	server := &http.Server{
 		Addr:              *listenAddr,
 		Handler:           mux,

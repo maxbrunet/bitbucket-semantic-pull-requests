@@ -176,7 +176,7 @@ func TestIsSemanticMessageWithValidTypes(t *testing.T) {
 			t.Parallel()
 
 			require.True(t,
-				spr.IsSemanticMessage(handler.NewSemanticMachine(true), handler.DefaultUserConfig(), tc+": something"), //nolint:goconst
+				spr.IsSemanticMessage(handler.NewSemanticMachine(true), handler.DefaultUserConfig(), tc+": something"),
 			)
 		})
 	}
