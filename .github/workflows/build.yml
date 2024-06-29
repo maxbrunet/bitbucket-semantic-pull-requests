@@ -104,7 +104,7 @@ jobs:
           go-version-file: .go-version
 
       - name: Build binaries
-        uses: goreleaser/goreleaser-action@5742e2a039330cbb23ebf35f046f814d4c6ff811 # v5.1.0
+        uses: goreleaser/goreleaser-action@286f3b13b1b49da4ac219696163fb8c1c93e1200 # v6.0.0
         with:
           # renovate: datasource=go depName=github.com/goreleaser/goreleaser
           version: v1.26.2
@@ -137,7 +137,7 @@ jobs:
           go-version-file: .go-version
 
       - name: Set up GoReleaser
-        uses: goreleaser/goreleaser-action@5742e2a039330cbb23ebf35f046f814d4c6ff811 # v5.1.0
+        uses: goreleaser/goreleaser-action@286f3b13b1b49da4ac219696163fb8c1c93e1200 # v6.0.0
         with:
           # renovate: datasource=go depName=github.com/goreleaser/goreleaser
           version: v1.26.2
