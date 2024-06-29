@@ -140,7 +140,6 @@ func TestGetRoot(t *testing.T) {
 	t.Parallel()
 
 	for _, m := range []string{http.MethodGet, http.MethodHead} {
-		m := m
 		t.Run(m, func(t *testing.T) {
 			t.Parallel()
 
@@ -189,7 +188,6 @@ func TestVanillaConfig(t *testing.T) {
 	}
 
 	for _, tc := range cases {
-		tc := tc
 		t.Run(tc.name, func(t *testing.T) {
 			runTestCase(t, &tc)
 		})
@@ -259,7 +257,6 @@ func TestScopes(t *testing.T) {
 	}
 
 	for _, tc := range cases {
-		tc := tc
 		t.Run(tc.name, func(t *testing.T) {
 			runTestCase(t, &tc)
 		})
@@ -314,7 +311,6 @@ func TestTypes(t *testing.T) {
 	}
 
 	for _, tc := range cases {
-		tc := tc
 		t.Run(tc.name, func(t *testing.T) {
 			runTestCase(t, &tc)
 		})
@@ -362,7 +358,6 @@ func TestCommitsOnly(t *testing.T) {
 	}
 
 	for _, tc := range cases {
-		tc := tc
 		t.Run(tc.name, func(t *testing.T) {
 			runTestCase(t, &tc)
 		})
@@ -401,7 +396,6 @@ func TestTitleOnly(t *testing.T) {
 	}
 
 	for _, tc := range cases {
-		tc := tc
 		t.Run(tc.name, func(t *testing.T) {
 			runTestCase(t, &tc)
 		})
@@ -449,7 +443,6 @@ func TestTitleAndCommits(t *testing.T) {
 	}
 
 	for _, tc := range cases {
-		tc := tc
 		t.Run(tc.name, func(t *testing.T) {
 			runTestCase(t, &tc)
 		})
@@ -552,7 +545,6 @@ func TestAllowMergeCommits(t *testing.T) {
 	}
 
 	for _, tc := range cases {
-		tc := tc
 		t.Run(tc.name, func(t *testing.T) {
 			runTestCase(t, &tc)
 		})
@@ -586,7 +578,6 @@ func TestAllowRevertCommits(t *testing.T) {
 	}
 
 	for _, tc := range cases {
-		tc := tc
 		t.Run(tc.name, func(t *testing.T) {
 			runTestCase(t, &tc)
 		})
