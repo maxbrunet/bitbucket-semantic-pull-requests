@@ -3,7 +3,7 @@ module github.com/maxbrunet/bitbucket-semantic-pull-requests
 go 1.22
 
 require (
-	github.com/go-playground/webhooks/v6 v6.3.0
+	github.com/go-playground/webhooks/v6 v6.4.0
 	github.com/h2non/gock v1.2.0
 	github.com/ktrysmt/go-bitbucket v0.9.80
 	github.com/leodido/go-conventionalcommits v0.12.0
