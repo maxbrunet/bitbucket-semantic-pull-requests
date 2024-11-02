@@ -1,3 +1,4 @@
+version: 2
 builds:
   - main: ./cmd/bitbucket-semantic-pull-requests
     ldflags:
@@ -35,10 +36,14 @@ kos:
     base_image: cgr.dev/chainguard/static:latest@sha256:1c785f2145250a80d2d71d2b026276f3358ef3543448500c72206d37ec4ece37
     creation_time: '{{ .CommitTimestamp }}'
     ko_data_creation_time: '{{ .CommitTimestamp }}'
-    labels:
+    labels: &labels
+      org.opencontainers.image.authors: maxbrunet https://github.com/maxbrunet
+      org.opencontainers.image.created: '{{ .CommitDate }}'
+      org.opencontainers.image.licenses: Apache-2.0
       org.opencontainers.image.source: https://github.com/maxbrunet/bitbucket-semantic-pull-requests
       org.opencontainers.image.url: https://github.com/maxbrunet/bitbucket-semantic-pull-requests
-      org.opencontainers.image.licenses: Apache-2.0
+      org.opencontainers.image.vendor: maxbrunet
+    annotations: *labels
     platforms:
       - linux/386
       - linux/amd64
