@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.166](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.165...v1.0.166) (2024-11-06)
+
+### Build System
+
+* **deps:** update go to v1.23.3 ([#639](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/639)) ([9fda080](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/9fda080fdcf6d1d4378671ae51793a37476d8e6c))
+
 ## [1.0.165](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.164...v1.0.165) (2024-11-01)
 
 ### Miscellaneous Chores
