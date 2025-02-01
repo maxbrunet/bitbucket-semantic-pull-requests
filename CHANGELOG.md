@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.173](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.172...v1.0.173) (2025-02-01)
+
+### Miscellaneous Chores
+
+* **deps:** update dependency @semantic-release/exec to v7 ([#690](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/690)) ([73547d8](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/73547d847e93f320f584eb2533c26701eadc9850))
+* **deps:** update github/codeql-action action to v3.28.8 ([#689](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/689)) ([ec52475](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/ec52475babae64878ab2c0d8c1609f7e7b4ff901))
+
+### Build System
+
+* **deps:** update cgr.dev/chainguard/static:latest docker digest to 853bfd4 ([#691](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/691)) ([a83097f](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/a83097f5645e1d9c3aa699d71ef4c28d32d7e7d9))
+
 ## [1.0.172](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.171...v1.0.172) (2025-01-29)
 
 ### Miscellaneous Chores
