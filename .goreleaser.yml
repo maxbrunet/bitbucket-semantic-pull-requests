@@ -24,11 +24,13 @@ builds:
 archives:
   - name_template: '{{ .ProjectName }}-{{ .Os }}-{{ .Arch }}{{ if .Arm }}v{{
       .Arm }}{{ end }}{{ if .Mips }}-{{ .Mips }}{{ end }}'
-    format: binary
+    formats:
+      - binary
 checksum:
   name_template: '{{ .ProjectName }}-checksums.txt'
 kos:
-  - repository: ghcr.io/maxbrunet/bitbucket-semantic-pull-requests
+  - repositories:
+      - ghcr.io/maxbrunet/bitbucket-semantic-pull-requests
     bare: true
     tags:
       - '{{ .Tag }}'
