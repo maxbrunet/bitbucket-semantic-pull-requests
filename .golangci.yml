@@ -4,8 +4,7 @@ linters:
   enable-all: true
   disable:
     # Deprectated
-    - gomnd
-    - execinquery
+    - exportloopref
     # Inappropriate
     - depguard
     - exhaustruct
@@ -40,9 +39,13 @@ linters-settings:
       - stdlib
       - github\.com\/leodido\/go-conventionalcommits
 issues:
-  include:
-    # Disable excluding of issues about comments from revive.
-    - EXC0012
-    - EXC0013
-    - EXC0014
-    - EXC0015
+  max-same-issues: 0
+  max-issues-per-linter: 0
+  exclude-use-default: false
+  exclude-rules:
+    - linters:
+        - errcheck
+      # Taken from the default exclusions (that are otherwise disabled above).
+      text: Error return value of .((os\.)?std(out|err)\..*|.*Close|.*Flush|os\.Remove(All)?|.*print(f|ln)?|os\.(Un)?Setenv). is not checked
+output:
+  sort-results: true
