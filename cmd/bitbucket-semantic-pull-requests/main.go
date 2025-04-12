@@ -21,10 +21,22 @@ var (
 )
 
 func main() {
-	bitbucketUsername := flag.String("bitbucket-username", "", "Bitbucket username (env BITBUCKET_USERNAME)")
-	bitbucketPassword := flag.String("bitbucket-password", "", "Bitbucket password (env BITBUCKET_PASSWORD)")
+	bitbucketUsername := flag.String(
+		"bitbucket-username",
+		"",
+		"Bitbucket username (env BITBUCKET_USERNAME)",
+	)
+	bitbucketPassword := flag.String(
+		"bitbucket-password",
+		"",
+		"Bitbucket password (env BITBUCKET_PASSWORD)",
+	)
 	listenAddr := flag.String("listen-address", ":8888", "Address to listen on for the webhook")
-	logLevel := zap.LevelFlag("log-level", zap.InfoLevel, "Only log messages with the given severity or above. One of: [debug, info, warn, error, dpanic, panic, fatal]")
+	logLevel := zap.LevelFlag(
+		"log-level",
+		zap.InfoLevel,
+		"Only log messages with the given severity or above. One of: [debug, info, warn, error, dpanic, panic, fatal]",
+	)
 
 	flag.CommandLine.AddGoFlagSet(goflag.CommandLine)
 	flag.Parse()

@@ -26,7 +26,10 @@ func isSemanticPullRequest(cfg *UserConfig, hasSemanticTitle, hasSemanticCommits
 	}
 }
 
-func getStatusDescription(cfg *UserConfig, hasSemanticTitle, hasSemanticCommits, isSemantic bool) string {
+func getStatusDescription(
+	cfg *UserConfig,
+	hasSemanticTitle, hasSemanticCommits, isSemantic bool,
+) string {
 	switch {
 	case !*cfg.Enabled:
 		return "skipped; check disabled in semantic.yml config"
@@ -94,7 +97,11 @@ func (spr *SemanticPullRequests) HandlePullRequestUpdate(w http.ResponseWriter, 
 	)
 	logger.Info("handling pull request update")
 
-	userConfig, err := GetUserConfig(spr.Client, payload.Repository.Owner.UUID, payload.Repository.UUID)
+	userConfig, err := GetUserConfig(
+		spr.Client,
+		payload.Repository.Owner.UUID,
+		payload.Repository.UUID,
+	)
 	if err != nil {
 		logger.Debug("failed to get user config", zap.Error(err))
 	}
@@ -128,7 +135,12 @@ func (spr *SemanticPullRequests) HandlePullRequestUpdate(w http.ResponseWriter, 
 		state = "FAILED"
 	}
 
-	description := getStatusDescription(userConfig, hasSemanticTitle, hasSemanticCommits, isSemantic)
+	description := getStatusDescription(
+		userConfig,
+		hasSemanticTitle,
+		hasSemanticCommits,
+		isSemantic,
+	)
 
 	cso := &bitbucket.CommitStatusOptions{
 		Key:         "Semantic Pull Request",
