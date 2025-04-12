@@ -1,10 +1,7 @@
-run:
-  timeout: 2m
+version: "2"
 linters:
-  enable-all: true
+  default: all
   disable:
-    # Deprectated
-    - exportloopref
     # Inappropriate
     - depguard
     - exhaustruct
@@ -15,37 +12,43 @@ linters:
     - paralleltest
     - varnamelen
     - wsl
-linters-settings:
-  cyclop:
-    max-complexity: 20
-  errcheck:
-    exclude-functions:
-      # Happens on exit via defer
-      - (*go.uber.org/zap.Logger).Sync
-  gci:
-    sections:
-      - standard
-      - default
-      - prefix(github.com/maxbrunet/bitbucket-semantic-pull-requests)
-  gofumpt:
-    extra-rules: true
-  goimports:
-    local-prefixes: github.com/maxbrunet/bitbucket-semantic-pull-requests
-  ireturn:
-    allow:
-      - anon
-      - error
-      - empty
-      - stdlib
-      - github\.com\/leodido\/go-conventionalcommits
+  settings:
+    cyclop:
+      max-complexity: 20
+    errcheck:
+      exclude-functions:
+        # Happens on exit via defer
+        - (*go.uber.org/zap.Logger).Sync
+    ireturn:
+      allow:
+        - anon
+        - error
+        - empty
+        - stdlib
+        - github\.com\/leodido\/go-conventionalcommits
+  exclusions:
+    rules:
+      - linters:
+          - errcheck
+        # Taken from the default exclusions in v1
+        text: Error return value of .((os\.)?std(out|err)\..*|.*Close|.*Flush|os\.Remove(All)?|.*print(f|ln)?|os\.(Un)?Setenv). is not checked
+formatters:
+  enable:
+    - gci
+    - gofmt
+    - gofumpt
+    - goimports
+  settings:
+    gci:
+      sections:
+        - standard
+        - default
+        - prefix(github.com/maxbrunet/bitbucket-semantic-pull-requests)
+    gofumpt:
+      extra-rules: true
+    goimports:
+      local-prefixes:
+        - github.com/maxbrunet/bitbucket-semantic-pull-requests
 issues:
-  max-same-issues: 0
   max-issues-per-linter: 0
-  exclude-use-default: false
-  exclude-rules:
-    - linters:
-        - errcheck
-      # Taken from the default exclusions (that are otherwise disabled above).
-      text: Error return value of .((os\.)?std(out|err)\..*|.*Close|.*Flush|os\.Remove(All)?|.*print(f|ln)?|os\.(Un)?Setenv). is not checked
-output:
-  sort-results: true
+  max-same-issues: 0
