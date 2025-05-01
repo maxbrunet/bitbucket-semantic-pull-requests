@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.181](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.180...v1.0.181) (2025-05-01)
+
+### Miscellaneous Chores
+
+* **deps:** update module github.com/golangci/golangci-lint to v2.1.3 ([#746](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/746)) ([90b693a](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/90b693a0d2670b682e1b0db45d58493075121a37))
+
+### Build System
+
+* **deps:** update cgr.dev/chainguard/static:latest docker digest to 2e3db16 ([#747](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/747)) ([a1299f3](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/a1299f38e2c508aeb424dd84610fe4ea071f3c64))
+
 ## [1.0.180](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.179...v1.0.180) (2025-04-29)
 
 ### Styles
