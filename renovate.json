@@ -8,40 +8,67 @@
     ":semanticCommits",
     ":semanticCommitScope(deps)"
   ],
-  "assignees": ["maxbrunet"],
+  "assignees": [
+    "maxbrunet"
+  ],
   "internalChecksFilter": "strict",
   "platformAutomerge": true,
-  "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
+  "postUpdateOptions": [
+    "gomodTidy",
+    "gomodUpdateImportPaths"
+  ],
   "packageRules": [
     {
       "description": "One week stability period for Go packages",
-      "matchDatasources": ["go"],
+      "matchDatasources": [
+        "go"
+      ],
       "minimumReleaseAge": "7 days"
     },
     {
       "description": "Bump minimum Go version",
-      "matchManagers": ["gomod"],
-      "matchDepTypes": ["golang"],
+      "matchManagers": [
+        "gomod"
+      ],
+      "matchDepTypes": [
+        "golang"
+      ],
       "rangeStrategy": "replace"
     },
     {
       "description": "Customize golang updates commit message",
-      "matchDatasources": ["golang-version"],
-      "matchPackageNames": ["go"],
+      "matchDatasources": [
+        "golang-version"
+      ],
+      "matchPackageNames": [
+        "go"
+      ],
       "commitMessageTopic": "Go"
     },
     {
-      "matchDepTypes": ["require"],
+      "matchDepTypes": [
+        "require"
+      ],
       "semanticCommitType": "build"
     },
     {
-      "matchPackageNames": ["go"],
-      "matchUpdateTypes": ["patch", "minor", "major"],
+      "matchPackageNames": [
+        "go"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "minor",
+        "major"
+      ],
       "semanticCommitType": "build"
     },
     {
-      "matchPackageNames": ["cgr.dev/chainguard/static"],
-      "extends": ["schedule:monthly"],
+      "matchPackageNames": [
+        "cgr.dev/chainguard/static"
+      ],
+      "extends": [
+        "schedule:monthly"
+      ],
       "semanticCommitType": "build"
     }
   ],
@@ -49,7 +76,9 @@
     {
       "description": "Update version keys in YAML files",
       "customType": "regex",
-      "fileMatch": ["(^|/).*.ya?ml$"],
+      "managerFilePatterns": [
+        "/(^|/).*.ya?ml$/"
+      ],
       "matchStrings": [
         "# renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>[^\\s]+?)(?: packageName=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[a-z-0-9]+?))?\\s*[\\w-_]*version: (?<currentValue>.*?)\\s"
       ]
@@ -57,7 +86,9 @@
     {
       "description": "Update base image in .goreleaser.yml",
       "customType": "regex",
-      "fileMatch": ["(^|/)\\.goreleaser\\.ya?ml$"],
+      "managerFilePatterns": [
+        "/(^|/)\\.goreleaser\\.ya?ml$/"
+      ],
       "matchStrings": [
         "base_image:\\s+[\"']?(?<depName>\\S+?):(?<currentValue>\\S+?)(?:@(?<currentDigest>sha256:\\S+))?[\"']?\\s"
       ],
@@ -67,16 +98,24 @@
     {
       "description": "Update Golang in .go-version file",
       "customType": "regex",
-      "fileMatch": ["(^|/)\\.go-version$"],
-      "matchStrings": ["^\\s*(?<currentValue>.+?)\\s*$"],
+      "managerFilePatterns": [
+        "/(^|/)\\.go-version$/"
+      ],
+      "matchStrings": [
+        "^\\s*(?<currentValue>.+?)\\s*$"
+      ],
       "depNameTemplate": "go",
       "datasourceTemplate": "golang-version"
     },
     {
       "description": "Update semantic-release plugins",
       "customType": "regex",
-      "fileMatch": ["^\\.github/workflows/build\\.yml$"],
-      "matchStrings": ["\\s{12}(?<depName>\\S+?)@(?<currentValue>.+?)\\s"],
+      "managerFilePatterns": [
+        "/^\\.github/workflows/build\\.yml$/"
+      ],
+      "matchStrings": [
+        "\\s{12}(?<depName>\\S+?)@(?<currentValue>.+?)\\s"
+      ],
       "datasourceTemplate": "npm"
     }
   ]
