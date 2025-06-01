@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.184](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.183...v1.0.184) (2025-06-01)
+
+### Miscellaneous Chores
+
+* **deps:** update dependency conventional-changelog-conventionalcommits to v9 ([#762](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/762)) ([3b896c9](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/3b896c92b354065ab5790fd479c0bf375e939336))
+* **deps:** update dependency semantic-release to v24.2.4 ([#761](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/761)) ([713e65f](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/713e65fa13d8043f3151f822c3494506af071aee))
+* **deps:** update dependency semantic-release to v24.2.5 ([#763](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/763)) ([6e718c4](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/6e718c42316efd9b24723c1ba276d58d4e5eab23))
+* **deps:** update github/codeql-action action to v3.28.18 ([#760](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/760)) ([17254be](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/17254be47c479b1ea6da8b217b18bf0bf3456c4d))
+
+### Build System
+
+* **deps:** update cgr.dev/chainguard/static:latest docker digest to 633aabd ([#764](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/764)) ([d842be7](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/d842be7f3afbf2a7675381b3c3c6e34b89362f52))
+
 ## [1.0.183](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.182...v1.0.183) (2025-05-12)
 
 ### Miscellaneous Chores
