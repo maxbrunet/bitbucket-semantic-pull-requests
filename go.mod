@@ -7,7 +7,7 @@ toolchain go1.24.4
 require (
 	github.com/go-playground/webhooks/v6 v6.4.0
 	github.com/h2non/gock v1.2.0
-	github.com/ktrysmt/go-bitbucket v0.9.85
+	github.com/ktrysmt/go-bitbucket v0.9.86
 	github.com/leodido/go-conventionalcommits v0.12.0
 	github.com/spf13/pflag v1.0.6
 	github.com/stretchr/testify v1.10.0
@@ -23,6 +23,6 @@ require (
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	go.uber.org/multierr v1.10.0 // indirect
 	golang.org/x/net v0.39.0 // indirect
-	golang.org/x/oauth2 v0.29.0 // indirect
+	golang.org/x/oauth2 v0.30.0 // indirect
 	golang.org/x/sys v0.32.0 // indirect
 )
