@@ -9,9 +9,11 @@ linters:
     - gochecknoglobals
     - gochecknoinits
     - lll
+    - noinlineerr
     - paralleltest
     - varnamelen
     - wsl
+    - wsl_v5
   settings:
     cyclop:
       max-complexity: 20
