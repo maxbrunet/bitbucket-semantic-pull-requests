@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.189](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.188...v1.0.189) (2025-07-24)
+
+### Miscellaneous Chores
+
+* **deps:** update dependency conventional-changelog-conventionalcommits to v9.1.0 ([#783](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/783)) ([8bd4f31](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/8bd4f316989b4d1a0cb2345f5f41cd1cf90aecdc))
+* **deps:** update dependency semantic-release to v24.2.7 ([#784](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/784)) ([0a61522](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/0a61522f7a9ba21e413a832f825a84e5353f1b40))
+* **deps:** update github/codeql-action action to v3.29.3 ([#788](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/788)) ([cc107ee](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/cc107eedae4aa638fef076a72152d4a905bfa288))
+* **deps:** update github/codeql-action action to v3.29.4 ([#789](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/789)) ([bbad6f4](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/bbad6f464224858bab191e1ed37d28da4eff104b))
+* **deps:** update module github.com/golangci/golangci-lint to v2.2.2 ([#787](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/787)) ([9197291](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/9197291ddf427150955b627b6eec56c4c9ec74bf))
+* **deps:** update module github.com/goreleaser/goreleaser to v2.11.0 ([#785](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/785)) ([23df7db](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/23df7dbb147c56b12aa950157577ec57b73e5a58))
+* **deps:** update sigstore/cosign-installer action to v3.9.2 ([#786](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/786)) ([4557847](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/4557847aa91697685b7c827913cfc7e5641c52fd))
+
+### Build System
+
+* **deps:** update module github.com/spf13/pflag to v1.0.7 ([#790](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/790)) ([d4d2bcd](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/d4d2bcdadec6553ea5dadec63774c8d9beeba621))
+
 ## [1.0.188](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.187...v1.0.188) (2025-07-08)
 
 ### Miscellaneous Chores
