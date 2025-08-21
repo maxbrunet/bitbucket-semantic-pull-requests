@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.191](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.190...v1.0.191) (2025-08-21)
+
+### Miscellaneous Chores
+
+* **deps:** update actions/checkout action to v4.3.0 ([#801](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/801)) ([12166ee](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/12166ee339e8ab2c9502ab1ca723f8f78ee33d30))
+* **deps:** update actions/checkout action to v5 ([#802](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/802)) ([f955c19](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/f955c195525a9445564ff5265bffe8e03c08255f))
+* **deps:** update github/codeql-action action to v3.29.10 ([#806](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/806)) ([e8381f1](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/e8381f19f51ba2d57a3360f966892653d296c774))
+* **deps:** update github/codeql-action action to v3.29.8 ([#798](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/798)) ([03c76a7](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/03c76a7896813ab5c37f3df4636e4922445f15f2))
+* **deps:** update github/codeql-action action to v3.29.9 ([#803](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/803)) ([cfa5edf](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/cfa5edfb55612aee1eedfa1e69053ca65d9bb10d))
+* **deps:** update goreleaser/goreleaser-action action to v6.4.0 ([#805](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/805)) ([8af09f6](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/8af09f66333908c55a650f5fa39dfd3fa64db669))
+* **deps:** update module github.com/golangci/golangci-lint to v2.3.1 ([#799](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/799)) ([5326ea8](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/5326ea862a1892bea92c890b5c03f9790e21d6b4))
+* **deps:** update module github.com/golangci/golangci-lint to v2.4.0 ([#807](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/807)) ([239447f](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/239447fe1d93dbf4f415d454e1e0c21044a91628))
+* **deps:** update module github.com/goreleaser/goreleaser to v2.11.2 ([#794](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/794)) ([e915e28](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/e915e28fc21932499f8990cd7fd03d5e91ae5174))
+* **golangci-lint:** use exclusion preset ([#800](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/800)) ([90c2582](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/90c2582ece538b6eec0e869f37b041041499c396))
+
+### Build System
+
+* **deps:** update go to v1.25.0 ([#804](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/804)) ([cb3dba8](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/cb3dba8319becc818eb9eb8a3707faf7a3d0eb06))
+
 ## [1.0.190](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.189...v1.0.190) (2025-08-08)
 
 ### Miscellaneous Chores
