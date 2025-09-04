@@ -65,14 +65,6 @@
       "versioningTemplate": "docker"
     },
     {
-      "description": "Update Golang in .go-version file",
-      "customType": "regex",
-      "managerFilePatterns": ["/(^|/)\\.go-version$/"],
-      "matchStrings": ["^\\s*(?<currentValue>.+?)\\s*$"],
-      "depNameTemplate": "go",
-      "datasourceTemplate": "golang-version"
-    },
-    {
       "description": "Update semantic-release plugins",
       "customType": "regex",
       "managerFilePatterns": ["/^\\.github/workflows/build\\.yml$/"],
