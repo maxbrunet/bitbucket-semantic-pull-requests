@@ -19,18 +19,6 @@
       "minimumReleaseAge": "7 days"
     },
     {
-      "description": "Bump minimum Go version",
-      "matchManagers": ["gomod"],
-      "matchDepTypes": ["golang"],
-      "rangeStrategy": "replace"
-    },
-    {
-      "description": "Customize golang updates commit message",
-      "matchDatasources": ["golang-version"],
-      "matchPackageNames": ["go"],
-      "commitMessageTopic": "Go"
-    },
-    {
       "matchDepTypes": ["require"],
       "semanticCommitType": "build"
     },
