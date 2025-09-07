@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.195](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.194...v1.0.195) (2025-09-07)
+
+### Miscellaneous Chores
+
+* **deps:** update actions/setup-go action to v6 ([#814](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/814)) ([6bc216d](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/6bc216d5055d754ea17d374d3df4731665ba610b))
+* **deps:** update cycjimmy/semantic-release-action action to v5 ([#810](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/810)) ([0b5d6a0](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/0b5d6a04889f2ca86c2284b117e9af7815a88c5f))
+* **deps:** update github/codeql-action action to v3.30.1 ([#816](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/816)) ([dfd0673](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/dfd0673e2d3abf5f8a94c7a9208e01127389c18f))
+* **renovate:** clean up go directive config ([#815](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/815)) ([aaff2f2](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/aaff2f2e500a6fe3c34c15ab8e404b5d25a80567))
+
+### Build System
+
+* **deps:** update module github.com/spf13/pflag to v1.0.8 ([#817](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/817)) ([b144164](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/b144164dc738453ea27abfecf02fe91b06f6078b))
+
 ## [1.0.194](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.193...v1.0.194) (2025-09-03)
 
 ### Build System
