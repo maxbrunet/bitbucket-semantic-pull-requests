@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.196](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.195...v1.0.196) (2025-09-08)
+
+### Build System
+
+* **deps:** update module github.com/spf13/pflag to v1.0.9 ([#818](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/818)) ([9c9d5ec](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/9c9d5ec02b1b29c4a3916f8be5f6ecb6df40ea77))
+
 ## [1.0.195](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.194...v1.0.195) (2025-09-07)
 
 ### Miscellaneous Chores
