@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.199](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.198...v1.0.199) (2025-10-01)
+
+### Miscellaneous Chores
+
+* **deps:** update dependency semantic-release to v24.2.8 ([#823](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/823)) ([fbd1367](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/fbd13676b7e40d7cc97f2e7920b2d3094e2d5cb5))
+* **deps:** update dependency semantic-release to v24.2.9 ([#826](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/826)) ([fd2fdee](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/fd2fdee2c6c27f9f2c2ccd528a842a99fe1b64ca))
+* **deps:** update docker/login-action action to v3.6.0 ([#832](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/832)) ([62aa74c](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/62aa74c15c8cb652aed66b8d3a77679e7f7bca82))
+* **deps:** update github/codeql-action action to v3.30.3 ([#824](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/824)) ([1956f5e](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/1956f5e80cbf5bf5dcda21975cdfcaa2d83ea355))
+* **deps:** update github/codeql-action action to v3.30.4 ([#829](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/829)) ([7fe62c3](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/7fe62c31d32de3f5e2b2673da0a95daaa48d03d4))
+* **deps:** update github/codeql-action action to v3.30.5 ([#830](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/830)) ([4a919e1](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/4a919e17229afdeca4d3dbe51fc9570b858d0d37))
+* **deps:** update module github.com/golangci/golangci-lint to v2.5.0 ([#831](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/831)) ([ed58592](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/ed5859242f286b6add8aa2324ffd80e0d7f2830f))
+* **deps:** update module github.com/goreleaser/goreleaser to v2.12.1 ([#827](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/827)) ([704054f](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/704054f1c62a3491a4040081f39733aff607a39f))
+* **deps:** update module github.com/goreleaser/goreleaser to v2.12.2 ([#828](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/828)) ([ab7d7f8](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/ab7d7f8ab1096f143b9582ee11ccf5175bacc309))
+* **deps:** update sigstore/cosign-installer action to v3.10.0 ([#825](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/825)) ([f189efa](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/f189efa098d1382ea7a75e370e42c628b05e34c3))
+
+### Build System
+
+* **deps:** update cgr.dev/chainguard/static:latest docker digest to b2e1c3d ([#833](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/833)) ([a8dd0cc](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/a8dd0cc92ba4d426960827e59c18530b00bedf75))
+
 ## [1.0.198](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.197...v1.0.198) (2025-09-10)
 
 ### Miscellaneous Chores
