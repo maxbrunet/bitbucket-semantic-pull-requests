@@ -302,34 +302,34 @@ func TestAreSemanticCommits(t *testing.T) {
 	anyCommit := true
 	anyCommitCfg.AnyCommit = &anyCommit
 
-	valid := []interface{}{
-		map[string]interface{}{
+	valid := []any{
+		map[string]any{
 			"message": "feat: potato\n",
 		},
 	}
 
-	partiallyValid := []interface{}{
-		map[string]interface{}{
+	partiallyValid := []any{
+		map[string]any{
 			"message": "feat: banana\n",
 		},
-		map[string]interface{}{
+		map[string]any{
 			"message": "unicorn\n",
 		},
-		map[string]interface{}{
+		map[string]any{
 			"message": "feat: potato\n",
 		},
 	}
 
-	malformed := []interface{}{"not a commit"}
+	malformed := []any{"not a commit"}
 
-	partiallyMalformed := []interface{}{
-		map[string]interface{}{
+	partiallyMalformed := []any{
+		map[string]any{
 			"message": "feat: banana\n",
 		},
-		map[string]interface{}{
+		map[string]any{
 			"unknown": "not a commit",
 		},
-		map[string]interface{}{
+		map[string]any{
 			"message": "feat: potato\n",
 		},
 	}
@@ -337,7 +337,7 @@ func TestAreSemanticCommits(t *testing.T) {
 	cases := []struct {
 		name     string
 		cfg      *handler.UserConfig
-		commits  []interface{}
+		commits  []any
 		expected bool
 	}{
 		{

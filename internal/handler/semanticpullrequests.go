@@ -91,7 +91,7 @@ func (spr *SemanticPullRequests) IsSemanticMessage(
 
 	isScopeValid := true
 	if cfg.Scopes != nil && cc.Scope != nil {
-		for _, s := range strings.Split(*cc.Scope, ",") {
+		for s := range strings.SplitSeq(*cc.Scope, ",") {
 			if !Contains(*cfg.Scopes, strings.TrimSpace(s)) {
 				isScopeValid = false
 			}
@@ -107,14 +107,14 @@ func (spr *SemanticPullRequests) IsSemanticMessage(
 func (spr *SemanticPullRequests) AreSemanticCommits(
 	machine *conventionalcommits.Machine,
 	cfg *UserConfig,
-	commits []interface{},
+	commits []any,
 ) bool {
-	var c map[string]interface{}
+	var c map[string]any
 
 	var isSemantic, ok bool
 
 	for _, ciface := range commits {
-		c, ok = ciface.(map[string]interface{})
+		c, ok = ciface.(map[string]any)
 		if !ok {
 			spr.Logger.Error("failed to convert commit type")
 		}
@@ -142,7 +142,7 @@ func (spr *SemanticPullRequests) AreSemanticCommits(
 	return !*cfg.AnyCommit
 }
 
-func (spr *SemanticPullRequests) getCommits(owner, repoSlug, prID string) ([]interface{}, error) {
+func (spr *SemanticPullRequests) getCommits(owner, repoSlug, prID string) ([]any, error) {
 	resIface, err := spr.Client.Repositories.PullRequests.Commits(&bitbucket.PullRequestsOptions{
 		Owner:    owner,
 		RepoSlug: repoSlug,
@@ -152,12 +152,12 @@ func (spr *SemanticPullRequests) getCommits(owner, repoSlug, prID string) ([]int
 		return nil, fmt.Errorf("failed to get commits: %w", err)
 	}
 
-	result, ok := resIface.(map[string]interface{})
+	result, ok := resIface.(map[string]any)
 	if !ok {
 		return nil, fmt.Errorf("%w when converting result type: %+v", errParsingCommits, resIface)
 	}
 
-	commits, ok := result["values"].([]interface{})
+	commits, ok := result["values"].([]any)
 	if !ok {
 		return nil, fmt.Errorf("%w when converting values type: %+v", errParsingCommits, resIface)
 	}

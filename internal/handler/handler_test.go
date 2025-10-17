@@ -26,29 +26,29 @@ type testCase struct {
 	name                string
 	event               string
 	prTitle             string
-	commits             []interface{}
+	commits             []any
 	config              string
 	expectedState       string
 	expectedDescription string
 }
 
-func unsemanticCommits() []interface{} {
-	return []interface{}{
-		map[string]interface{}{
+func unsemanticCommits() []any {
+	return []any{
+		map[string]any{
 			"message": "fix something\n",
 		},
-		map[string]interface{}{
+		map[string]any{
 			"message": "fix something else\n",
 		},
 	}
 }
 
-func semanticCommits() []interface{} {
-	return []interface{}{
-		map[string]interface{}{
+func semanticCommits() []any {
+	return []any{
+		map[string]any{
 			"message": "build(scope1): something\n",
 		},
-		map[string]interface{}{
+		map[string]any{
 			"message": "build(scope2): something else\n",
 		},
 	}
@@ -60,18 +60,18 @@ func runTestCase(t *testing.T, tc *testCase) {
 	defer gock.Off()
 
 	data, err := json.Marshal(
-		map[string]interface{}{
-			"pullrequest": map[string]interface{}{
+		map[string]any{
+			"pullrequest": map[string]any{
 				"id":    pullRequestID,
 				"title": tc.prTitle,
-				"source": map[string]interface{}{
-					"commit": map[string]interface{}{
+				"source": map[string]any{
+					"commit": map[string]any{
 						"hash": commitHash,
 					},
 				},
 			},
-			"repository": map[string]interface{}{
-				"owner": map[string]interface{}{
+			"repository": map[string]any{
+				"owner": map[string]any{
 					"uuid": ownerUUID,
 				},
 				"uuid": repositoryUUID,
@@ -103,7 +103,7 @@ func runTestCase(t *testing.T, tc *testCase) {
 		)).
 		MatchHeader("Authorization", authorizationHeader).
 		Reply(200).
-		JSON(map[string]interface{}{
+		JSON(map[string]any{
 			"values": tc.commits,
 		})
 
@@ -114,7 +114,7 @@ func runTestCase(t *testing.T, tc *testCase) {
 		)).
 		MatchHeader("Authorization", authorizationHeader).
 		MatchHeader("Content-Type", "application/json").
-		JSON(map[string]interface{}{
+		JSON(map[string]any{
 			"name":        "",
 			"key":         "Semantic Pull Request",
 			"state":       tc.expectedState,
@@ -296,11 +296,11 @@ func TestTypes(t *testing.T) {
 			name:    "SuccessfulWithSemanticCommitsAndValidTypes",
 			event:   "pullrequest:updated",
 			prTitle: "fix(scope1): bananas",
-			commits: []interface{}{
-				map[string]interface{}{
+			commits: []any{
+				map[string]any{
 					"message": "type1(scope1): something\n",
 				},
-				map[string]interface{}{
+				map[string]any{
 					"message": "type2(scope2): something else\n",
 				},
 			},
@@ -524,7 +524,7 @@ func TestAllowMergeCommits(t *testing.T) {
 			name:    "SuccessfulWithSemanticAndMergeCommitsWhenEnabled",
 			event:   "pullrequest:updated",
 			prTitle: "fix: bananas",
-			commits: append(semanticCommits(), map[string]interface{}{
+			commits: append(semanticCommits(), map[string]any{
 				"message": "Merge branch 'master' into feature/logout\n",
 			}),
 			config:              "commitsOnly: true\nallowMergeCommits: true",
@@ -535,7 +535,7 @@ func TestAllowMergeCommits(t *testing.T) {
 			name:    "FailedWithSemanticAndMergeCommitsWhenDisabled",
 			event:   "pullrequest:updated",
 			prTitle: "fix: bananas",
-			commits: append(semanticCommits(), map[string]interface{}{
+			commits: append(semanticCommits(), map[string]any{
 				"message": "Merge branch 'master' into feature/logout\n",
 			}),
 			config:              "commitsOnly: true\nallowMergeCommits: false",
@@ -557,7 +557,7 @@ func TestAllowRevertCommits(t *testing.T) {
 			name:    "SuccessfulWithSemanticAndRevertCommitsWhenEnabled",
 			event:   "pullrequest:updated",
 			prTitle: "fix: bananas",
-			commits: append(semanticCommits(), map[string]interface{}{
+			commits: append(semanticCommits(), map[string]any{
 				"message": "Revert \"feat: ride unicorns\"\n",
 			}),
 			config:              "commitsOnly: true\nallowRevertCommits: true",
@@ -568,7 +568,7 @@ func TestAllowRevertCommits(t *testing.T) {
 			name:    "FailedWithSemanticAndRevertCommitsWhenDisabled",
 			event:   "pullrequest:updated",
 			prTitle: "fix: bananas",
-			commits: append(semanticCommits(), map[string]interface{}{
+			commits: append(semanticCommits(), map[string]any{
 				"message": "Revert \"feat: ride unicorns\"\n",
 			}),
 			config:              "commitsOnly: true\nallowRevertCommits: false",
