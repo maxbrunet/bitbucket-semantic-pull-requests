@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.204](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.203...v1.0.204) (2025-11-27)
+
+### Miscellaneous Chores
+
+* **deps:** update actions/checkout action to v5.0.1 ([#863](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/863)) ([e9d71d1](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/e9d71d1024c05d36de61c79644c00a14cdeebeec))
+* **deps:** update actions/checkout action to v6 ([#866](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/866)) ([e1b644e](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/e1b644e38b1d3bc5005c8825148e1a9311fe5a60))
+* **deps:** update actions/setup-go action to v6.1.0 ([#865](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/865)) ([0d448a8](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/0d448a8b663e34d429e1226b3683eeb10d66afae))
+* **deps:** update cycjimmy/semantic-release-action action to v5.0.2 ([#862](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/862)) ([f5c6448](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/f5c644833a66bf2e73fc0391f11230f6d12ca507))
+* **deps:** update cycjimmy/semantic-release-action action to v6 ([#870](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/870)) ([bd4887d](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/bd4887dd23e35a7a6bd2485f4b161606ccb8e7e3))
+* **deps:** update dependency semantic-release to v25.0.2 ([#858](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/858)) ([4aa80d6](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/4aa80d679e96deab3b8c024cae50d98c8e0655af))
+* **deps:** update github/codeql-action action to v4.31.3 ([#861](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/861)) ([a86294c](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/a86294cfbd37dba1ba6c59655e1ad8c7c0fb061a))
+* **deps:** update github/codeql-action action to v4.31.4 ([#864](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/864)) ([d3ec640](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/d3ec64046aff0bc37d930baf297866cbfa832b21))
+* **deps:** update github/codeql-action action to v4.31.5 ([#869](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/869)) ([c6fa227](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/c6fa227402aa24fd3699167a054bdada9fcabe84))
+* **deps:** update golangci/golangci-lint-action action to v9 ([#859](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/859)) ([60ab3ae](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/60ab3ae6bf36101a23ff53e21a82ea021054cce6))
+* **deps:** update golangci/golangci-lint-action action to v9.1.0 ([#868](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/868)) ([eaaea8c](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/eaaea8c3e33ed7cea555ed1bbfc6e010e26f0f71))
+* **deps:** update module github.com/golangci/golangci-lint to v2.6.1 ([#860](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/860)) ([5ceb502](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/5ceb502fb1be14ab650ae3c1be8559a2e75cd04b))
+* **deps:** update module github.com/golangci/golangci-lint to v2.6.2 ([#867](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/867)) ([43a4373](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/43a437346525cb18e9b34697bd1edc44f33bc89f))
+
+### Build System
+
+* **deps:** update module go.uber.org/zap to v1.27.1 ([#871](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/871)) ([8437aa5](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/8437aa549a34f997ba4173f2dae2126671b8987c))
+
 ## [1.0.203](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.202...v1.0.203) (2025-11-06)
 
 ### Miscellaneous Chores
