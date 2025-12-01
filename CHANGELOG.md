@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.205](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.204...v1.0.205) (2025-12-01)
+
+### Build System
+
+* **deps:** update cgr.dev/chainguard/static:latest docker digest to d44809c ([#872](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/872)) ([fc38dc9](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/fc38dc9709ef947f89b4efd4e36999bc2a787481))
+
 ## [1.0.204](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.203...v1.0.204) (2025-11-27)
 
 ### Miscellaneous Chores
