@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.206](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.205...v1.0.206) (2025-12-02)
+
+### Miscellaneous Chores
+
+* **deps:** update github/codeql-action action to v4.31.6 ([#873](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/873)) ([6e9d341](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/6e9d3411ed2c69f80058e8afbd19066782d0c15d))
+
+### Build System
+
+* **deps:** update dependency go to v1.25.5 ([#874](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/874)) ([1644858](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/16448587ca670ada2b95c98f22e5e758186c1819))
+
 ## [1.0.205](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.204...v1.0.205) (2025-12-01)
 
 ### Build System
