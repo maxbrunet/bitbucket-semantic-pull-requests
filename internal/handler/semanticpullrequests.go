@@ -26,7 +26,10 @@ func NewSemanticPullRequests(
 	username, password string,
 	logger *zap.Logger,
 ) (*SemanticPullRequests, error) {
-	client := bitbucket.NewBasicAuth(username, password)
+	client, err := bitbucket.NewBasicAuth(username, password)
+	if err != nil {
+		return nil, fmt.Errorf("failed to initialize Bitbucket client: %w", err)
+	}
 
 	hook, err := webhook.New()
 	if err != nil {
