@@ -82,7 +82,12 @@ func runTestCase(t *testing.T, tc *testCase) {
 		t.Error("fail to prepare mock payload")
 	}
 
-	req := httptest.NewRequest(http.MethodPost, "/", bytes.NewReader(data))
+	req := httptest.NewRequestWithContext(
+		t.Context(),
+		http.MethodPost,
+		"/",
+		bytes.NewReader(data),
+	)
 	req.Header.Set("X-Event-Key", tc.event)
 	req.Header.Set("Content-Type", "application/json")
 	rec := httptest.NewRecorder()
@@ -143,7 +148,7 @@ func TestGetRoot(t *testing.T) {
 		t.Run(m, func(t *testing.T) {
 			t.Parallel()
 
-			req := httptest.NewRequest(m, "/", nil)
+			req := httptest.NewRequestWithContext(t.Context(), m, "/", http.NoBody)
 			rec := httptest.NewRecorder()
 
 			spr.HandlePullRequestUpdate(rec, req)
