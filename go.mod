@@ -7,7 +7,7 @@ toolchain go1.26.2
 require (
 	github.com/go-playground/webhooks/v6 v6.4.0
 	github.com/h2non/gock v1.2.0
-	github.com/ktrysmt/go-bitbucket v0.9.96
+	github.com/ktrysmt/go-bitbucket v0.9.98
 	github.com/leodido/go-conventionalcommits v0.12.0
 	github.com/spf13/pflag v1.0.10
 	github.com/stretchr/testify v1.11.1
