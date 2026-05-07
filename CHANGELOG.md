@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.225](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.224...v1.0.225) (2026-05-07)
+
+### Miscellaneous Chores
+
+* **deps:** update sigstore/cosign-installer action to v4.1.2 ([#952](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/952)) ([c7e19c7](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/c7e19c71853b43d442c5bf5135ba430e3bced3f4))
+
+### Build System
+
+* **deps:** update go toolchain directive to v1.26.3 ([#953](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/953)) ([c7af34d](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/c7af34d153c280b028381335efc23dcb833639e6))
+
 ## [1.0.224](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.223...v1.0.224) (2026-05-06)
 
 ### Build System
