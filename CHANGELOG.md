@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.227](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.226...v1.0.227) (2026-05-31)
+
+### Miscellaneous Chores
+
+* **deps:** update dependency golangci/golangci-lint to v2.12.2 ([#947](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/947)) ([41b6cda](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/41b6cda3a5c5211975a1123c22da0878547fc46c))
+* **deps:** update docker/login-action action to v4.2.0 ([#960](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/960)) ([202ca60](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/202ca600b42f79f5cb2b1108051904f47b51edf3))
+* **deps:** update github/codeql-action action to v4.35.4 ([#955](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/955)) ([e4a78d7](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/e4a78d7cca0a710fd38be5d7e1f0bc2c22cb2571))
+* **deps:** update github/codeql-action action to v4.35.5 ([#957](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/957)) ([0e463d0](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/0e463d0b697b9c652e688617933f5150b1841e85))
+* **deps:** update github/codeql-action action to v4.36.0 ([#961](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/961)) ([6a59968](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/6a59968bce13411ee0f07c4493650c7d0d7b81fd))
+* **deps:** update golangci/golangci-lint-action action to v9.2.1 ([#959](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/959)) ([f4fafba](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/f4fafba4a5189c898e885c6c5da1877465e48f1a))
+* **deps:** update goreleaser/goreleaser-action action to v7.2.2 ([#958](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/958)) ([dcc7c97](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/dcc7c97b2b52480117c67d49173e963757a820c2))
+
+### Build System
+
+* **deps:** update module github.com/ktrysmt/go-bitbucket to v0.10.0 ([#962](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/962)) ([c9610b3](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/c9610b3fcbaf9b0ec14b81e43ba228fd36cbfe96))
+
+### Continuous Integration
+
+* **test:** run on ubuntu-24.04-riscv ([#956](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/956)) ([2b3e20b](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/2b3e20bb4589221074e63a8dce2ac3523b518228))
+
 ## [1.0.226](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.225...v1.0.226) (2026-05-08)
 
 ### Build System
