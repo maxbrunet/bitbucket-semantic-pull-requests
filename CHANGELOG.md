@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.233](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.232...v1.0.233) (2026-08-14)
+
 ## [1.0.232](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.231...v1.0.232) (2026-08-02)
 
 ## [1.0.231](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.230...v1.0.231) (2026-08-01)
