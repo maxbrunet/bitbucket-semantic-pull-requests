@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.234](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.233...v1.0.234) (2026-08-17)
+
+### Miscellaneous Chores
+
+* **deps): revert "chore(deps:** update dependency conventional-changelog-conventionalcommits to v10" ([#1006](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/1006)) ([5f7e1d7](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/5f7e1d7669bd4b6e6dcd9a723f7b9586179470e9))
+
+### Build System
+
+* **deps:** update module github.com/stretchr/testify to v1.12.0 ([#1008](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/1008)) ([044b9a9](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/044b9a9c3c28c9465bfd4c2f3db3e42429bb9b47))
+
 ## [1.0.233](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.232...v1.0.233) (2026-08-14)
 
 ## [1.0.232](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.231...v1.0.232) (2026-08-02)
