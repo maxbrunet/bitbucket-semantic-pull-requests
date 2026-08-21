@@ -7,6 +7,7 @@ linters:
     # Inappropriate
     - depguard
     - exhaustruct
+    - exhaustruct_v5
     - funlen
     - gochecknoglobals
     - gochecknoinits
@@ -49,7 +50,8 @@ formatters:
         - default
         - prefix(github.com/maxbrunet/bitbucket-semantic-pull-requests)
     gofumpt:
-      extra-rules: true
+      extra:
+        group-params: true
     goimports:
       local-prefixes:
         - github.com/maxbrunet/bitbucket-semantic-pull-requests
