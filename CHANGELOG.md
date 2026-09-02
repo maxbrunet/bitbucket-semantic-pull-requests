@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.238](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.237...v1.0.238) (2026-09-02)
+
+### Build System
+
+* **deps:** update go toolchain directive to v1.27.1 ([#1017](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/1017)) ([69c2354](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/69c23545192911b0b79c1d039c883cba92f93903))
+
 ## [1.0.237](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.236...v1.0.237) (2026-09-01)
 
 ### Miscellaneous Chores
