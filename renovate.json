@@ -6,7 +6,9 @@
     ":automergeMinor",
     ":rebaseStalePrs",
     ":semanticCommits",
-    ":semanticCommitScope(deps)"
+    ":semanticCommitScope(deps)",
+    "helpers:pinGitHubActionDigestsToSemver",
+    "security:gomodIndirectSecurityUpdates"
   ],
   "assignees": ["maxbrunet"],
   "internalChecksFilter": "strict",
