@@ -11,7 +11,6 @@ linters:
     - funlen
     - gochecknoglobals
     - gochecknoinits
-    - goconst
     - lll
     - noinlineerr
     - paralleltest
@@ -25,6 +24,8 @@ linters:
       exclude-functions:
         # Happens on exit via defer
         - (*go.uber.org/zap.Logger).Sync
+    goconst:
+      ignore-tests: true
     ireturn:
       allow:
         - anon
@@ -52,6 +53,8 @@ formatters:
     gofumpt:
       extra:
         group-params: true
+        clothe-returns: true
+        balance-calls: true
     goimports:
       local-prefixes:
         - github.com/maxbrunet/bitbucket-semantic-pull-requests
