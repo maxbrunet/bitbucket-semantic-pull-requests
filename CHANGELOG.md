@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.240](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.239...v1.0.240) (2026-10-20)
+
+### Miscellaneous Chores
+
+* **deps:** update cycjimmy/semantic-release-action action to v7 ([#1031](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/1031)) ([7c935bd](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/7c935bdea1c3c9e429491890679d69e5d1d8411f))
+* **deps:** update cycjimmy/semantic-release-action action to v7.1.0 ([#1032](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/1032)) ([5f6c550](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/5f6c550b97c8def438c7cb58cbe9c1d26fcaeba4))
+* **deps:** update cycjimmy/semantic-release-action action to v7.1.2 ([#1033](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/1033)) ([e14ea16](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/e14ea167d2e312b6ba927e232cb8ecd1187cbef6))
+* **deps:** update cycjimmy/semantic-release-action action to v8 ([#1034](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/1034)) ([b746f78](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/b746f7828794fac0fbc07334a11cb4d5c108b842))
+* **deps:** update cycjimmy/semantic-release-action action to v8.0.1 ([#1036](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/1036)) ([1aaff59](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/1aaff59fcedde47f834776d7dc9cce7a244c5e1c))
+* **deps:** update cycjimmy/semantic-release-action action to v8.1.1 ([#1038](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/1038)) ([3ec99e4](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/3ec99e47796bf6c50cd9c1361a6a6bd6a20ba218))
+* **deps:** update cycjimmy/semantic-release-action action to v8.1.2 ([#1039](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/1039)) ([f0dc848](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/f0dc8488ea6cd4dc99409603401415ee353b85bd))
+* **deps:** update cycjimmy/semantic-release-action action to v8.1.3 ([#1041](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/1041)) ([4e138bc](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/4e138bc210cdcc6927e8eb169c75a29ec7044e19))
+* **deps:** update dependency golangci/golangci-lint to v2.15.0 ([#1040](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/1040)) ([8d85778](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/8d8577828bd28aa194fe05a3e50550f076dd054a))
+* **deps:** update dependency goreleaser/goreleaser to v2.18.3 ([#1030](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/1030)) ([85c6749](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/85c6749091bde574891d6e702fdcbde451055d46))
+* **deps:** update github/codeql-action action to v4.39.0 ([#1037](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/1037)) ([28a91d8](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/28a91d8a2eb5ada0ba2956b9acdc54c64431e179))
+* **deps:** update goreleaser/goreleaser-action action to v7.3.0 ([#1035](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/1035)) ([2e3f1fa](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/2e3f1faf1017fd579f6899dfe1452b8f24b316b9))
+
+### Build System
+
+* **deps:** update go toolchain directive to v1.27.3 ([#1042](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/issues/1042)) ([6870861](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/commit/68708614df96d79182dceebccf68d6f43f6dc5df))
+
 ## [1.0.239](https://github.com/maxbrunet/bitbucket-semantic-pull-requests/compare/v1.0.238...v1.0.239) (2026-10-08)
 
 ### Miscellaneous Chores
