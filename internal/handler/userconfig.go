@@ -4,7 +4,7 @@ import (
 	"errors"
 
 	"github.com/ktrysmt/go-bitbucket"
-	"go.yaml.in/yaml/v3"
+	"go.yaml.in/yaml/v4"
 )
 
 var (
