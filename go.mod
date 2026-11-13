@@ -9,7 +9,7 @@ require (
 	github.com/h2non/gock v1.2.0
 	github.com/ktrysmt/go-bitbucket v0.10.0
 	github.com/leodido/go-conventionalcommits v0.13.0
-	github.com/spf13/pflag v1.0.10
+	github.com/spf13/pflag v1.1.0
 	github.com/stretchr/testify v1.12.1
 	go.uber.org/zap v1.28.0
 	go.yaml.in/yaml/v4 v4.0.0
